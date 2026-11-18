@@ -1,0 +1,835 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HUSTLE WEAR | Street Essentials &amp; Oversized Drops</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#9ca188",
+            "surface-container-high": "#eae7ea",
+            "surface-dim": "#dcd9dc",
+            "on-background": "#1b1b1d",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e5e1e4",
+            "on-primary-container": "#2d3a00",
+            "on-tertiary-fixed": "#191d0c",
+            "on-surface-variant": "#454839",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#111d27",
+            "primary": "#516600",
+            "secondary-fixed-dim": "#bbc8d6",
+            "on-tertiary-fixed-variant": "#444934",
+            "surface": "#fcf8fb",
+            "error": "#ba1a1a",
+            "outline-variant": "#c6c8b4",
+            "primary-fixed": "#d2ee7f",
+            "inverse-on-surface": "#f3f0f2",
+            "surface-tint": "#516600",
+            "inverse-primary": "#b7d166",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#c4c9ae",
+            "on-secondary-fixed-variant": "#3c4854",
+            "background": "#fcf8fb",
+            "secondary-container": "#d7e4f3",
+            "inverse-surface": "#303032",
+            "primary-container": "#8fa842",
+            "primary-fixed-dim": "#b7d166",
+            "surface-container-low": "#f6f3f5",
+            "on-surface": "#1b1b1d",
+            "on-primary": "#ffffff",
+            "surface-bright": "#fcf8fb",
+            "tertiary-fixed": "#e0e5c9",
+            "on-primary-fixed": "#161e00",
+            "outline": "#767967",
+            "on-primary-fixed-variant": "#3c4d00",
+            "surface-container-highest": "#e5e1e4",
+            "surface-container": "#f0edef",
+            "secondary-fixed": "#d7e4f3",
+            "tertiary": "#5b614b",
+            "on-tertiary-container": "#333824",
+            "secondary": "#53606c",
+            "on-secondary-container": "#596672"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "space-3xl": "6rem",
+            "gutter-desktop": "2rem",
+            "margin-desktop": "4rem",
+            "space-2xl": "4rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-tablet": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Syne"],
+            "price-lg": ["Hanken Grotesk"],
+            "price-md": ["Hanken Grotesk"],
+            "headline-md": ["Syne"],
+            "display-hero-mobile": ["Syne"],
+            "body-lg": ["Hanken Grotesk"],
+            "display-hero": ["Syne"],
+            "body-sm": ["Hanken Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "headline-xl-mobile": ["Syne"],
+            "headline-sm": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-xl": ["Syne"],
+            "label-caps": ["Hanken Grotesk"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-lg": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" }],
+            "display-hero": ["84px", { "lineHeight": "92px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .hairline-border { border: 1px solid #c6c8b4; }
+    .product-image-ratio { aspect-ratio: 4 / 5; }
+    /* Dual image hover transition */
+    .product-card:hover .primary-img { opacity: 0; }
+    .product-card:hover .secondary-img { opacity: 1; transform: scale(1.03); }
+    /* Custom range input styling */
+    input[type=range]::-webkit-slider-thumb {
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 0;
+      background: #1b1b1d;
+      cursor: pointer;
+      border: 1px solid #c6c8b4;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- MARQUEE STREET TICKER -->
+<div class="w-full bg-inverse-surface text-inverse-on-surface py-2 px-4 border-b border-outline-variant overflow-hidden select-none">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between font-label-caps text-label-caps uppercase tracking-widest text-surface-container-high">
+<span class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-fixed inline-block"></span>
+        MONSOON DROPS ARCHIVE / V.4 VOL.02
+      </span>
+<span class="hidden md:inline-block">COMPLIMENTARY SHIPPING ACROSS INDIA FOR ORDERS OVER ₹1,999 • DISPATCH WITHIN 24 HOURS</span>
+<span class="flex items-center gap-3">
+<span class="">CURRENCY: INR (₹)</span>
+<span class="text-primary-fixed font-bold">ALL DROPS FINAL SALE EDITION</span>
+</span>
+</div>
+</div>
+<!-- TOP APP BAR (Shared Component: TopNavBar) -->
+<header class="bg-surface dark:bg-inverse-surface text-primary dark:text-inverse-primary docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between h-20">
+<!-- Brand Logo Anchor -->
+<a class="text-headline-md font-headline-md tracking-tight uppercase text-on-surface dark:text-inverse-on-surface hover:opacity-90 active:scale-95 transition-all duration-150" href="#">
+        HUSTLE WEAR
+      </a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-8 h-full">
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center" href="#">
+          Men
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center" href="#">
+          Women
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center" href="#">
+          Unisex
+        </a>
+<!-- Active Nav: Categories -->
+<a class="text-on-surface dark:text-inverse-on-surface border-b-2 border-primary font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center font-semibold" href="#">
+          Categories
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center" href="#">
+          Explore
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150 h-full flex items-center" href="#">
+          Sale
+        </a>
+</nav>
+<!-- Right Search & Actions Cluster -->
+<div class="flex items-center gap-6">
+<!-- Integrated Search Bar (on_right) -->
+<div class="relative hidden lg:flex items-center w-64 border border-outline-variant bg-surface-container-lowest px-3 py-2">
+<input class="w-full bg-transparent text-body-sm font-body-sm text-on-surface focus:outline-none border-none p-0 pr-6" placeholder="Search drops, fits, GSM..." type="text" value="Heavyweight Tees">
+<button aria-label="Search" class="absolute right-3 text-on-surface-variant hover:text-primary flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="search">search</span>
+</button>
+</div>
+<!-- Trailing Icon Actions -->
+<div class="flex items-center gap-4 text-on-surface">
+<button aria-label="Notifications" class="hover:text-primary transition-colors flex items-center relative" title="Notifications">
+<span class="material-symbols-outlined text-2xl" data-icon="notifications">notifications</span>
+<span class="w-1.5 h-1.5 bg-primary absolute top-0 right-0"></span>
+</button>
+<button aria-label="Wishlist" class="hover:text-primary transition-colors flex items-center relative" title="Wishlist" id="header-wishlist-btn">
+<span class="material-symbols-outlined text-2xl" data-icon="favorite_border">favorite_border</span>
+<span class="font-label-caps text-[9px] font-bold absolute -bottom-1 -right-1 bg-surface-container-highest px-1" id="header-wishlist-count">3</span>
+</button>
+<button aria-label="Profile" class="hover:text-primary transition-colors flex items-center" title="Profile">
+<span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+</button>
+<!-- Trailing Primary Action (Bag) -->
+<button class="bg-inverse-surface text-surface-container-lowest px-4 py-2 flex items-center gap-2 text-label-caps font-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" id="header-bag-btn">
+<span class="material-symbols-outlined text-base" data-icon="shopping_bag">shopping_bag</span>
+<span class="">Bag (0)</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- BREADCRUMB & PAGE HERO HEADER -->
+<section class="w-full bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-[1440px] mx-auto px-margin-desktop py-8">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant mb-4">
+<a class="hover:text-on-surface" href="#">Home</a>
+<span class="text-outline">/</span>
+<a class="hover:text-on-surface" href="#">Men</a>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-semibold">Heavyweight T-Shirts &amp; Streetwear</span>
+</nav>
+<!-- Headline & Count -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="font-label-caps text-label-caps tracking-widest text-primary font-bold uppercase">Archive Drop 2025 // Core</span>
+<span class="w-12 h-px bg-outline-variant"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">280–320 GSM HEAVY COTTON</span>
+</div>
+<h1 class="text-headline-xl font-headline-xl uppercase text-on-surface tracking-tight">
+            STREET ESSENTIALS &amp; OVERSIZED DROPS
+          </h1>
+</div>
+<div class="text-right">
+<p class="text-headline-sm font-headline-sm text-on-surface-variant">
+            (148 Styles)
+          </p>
+<span class="text-body-sm font-body-sm text-outline">Refreshed 12 mins ago</span>
+</div>
+</div>
+<!-- Quick Category Pill Filter Tags -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 pt-1 no-scrollbar">
+<button class="px-4 py-2 text-body-sm font-body-sm bg-inverse-surface text-surface-container-lowest font-semibold shrink-0">
+          All
+        </button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0 flex items-center gap-1.5">
+<span class="">Heavyweight Tees</span>
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+</button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0">
+          Vintage Washed
+        </button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0">
+          Graphic Tees
+        </button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0">
+          Acid Wash
+        </button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0">
+          Minimalist Polos
+        </button>
+<button class="px-4 py-2 text-body-sm font-body-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-inverse-surface transition-colors shrink-0">
+          Drop-Shoulder
+        </button>
+</div>
+</div>
+</section>
+<!-- MAIN CATALOG CONTENT CANVAS (2-Column Desktop Grid) -->
+<main class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-xl">
+<div class="flex gap-gutter-desktop items-start">
+<!-- LEFT SIDEBAR: STICKY FILTERS (280px wide) -->
+<aside class="w-[280px] shrink-0 sticky top-28 space-y-6 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 pb-12"><div class="p-4 bg-surface-container-lowest border border-outline-variant space-y-3"><div class="flex items-center justify-between"><span id="active-filters-heading" class="text-label-caps font-label-caps uppercase text-on-surface-variant tracking-wider">Active Filters (<span id="active-filter-count" class="">3</span>)</span><button id="clear-all-filters-btn" aria-label="Clear all applied filters" class="text-label-caps font-label-caps uppercase text-primary hover:underline focus:outline-none focus:ring-1 focus:ring-primary font-bold tracking-wider">Clear All</button></div><div id="active-filter-chips" class="flex flex-wrap gap-2" aria-labelledby="active-filters-heading"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-body-sm font-body-sm bg-surface-container text-on-surface border border-outline-variant" data-filter-tag="filter-gender-men"><span class="">Men</span><button aria-label="Remove Men filter" class="text-on-surface-variant hover:text-error focus:outline-none remove-filter-chip">✕</button></span><span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-body-sm font-body-sm bg-surface-container text-on-surface border border-outline-variant" data-filter-tag="filter-size-l"><span class="">Size L</span><button aria-label="Remove Size L filter" class="text-on-surface-variant hover:text-error focus:outline-none remove-filter-chip">✕</button></span><span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-body-sm font-body-sm bg-surface-container text-on-surface border border-outline-variant" data-filter-tag="filter-price-max"><span class="">Under ₹1,999</span><button aria-label="Remove price filter" class="text-on-surface-variant hover:text-error focus:outline-none remove-filter-chip">✕</button></span></div></div><div class="border-b border-outline-variant pb-5"><button type="button" id="btn-filter-gender" aria-expanded="true" aria-controls="section-filter-gender" class="w-full flex items-center justify-between mb-3 cursor-pointer select-none text-left focus:outline-none focus:ring-1 focus:ring-primary py-1"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Gender</h3><span class="material-symbols-outlined text-on-surface transform transition-transform duration-200 accordion-arrow" data-icon="expand_less">expand_less</span></button><div id="section-filter-gender" class="space-y-2" role="region" aria-labelledby="btn-filter-gender"><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-gender-men" checked="" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Men"><span class="text-on-surface font-semibold">Men</span></div><span class="text-outline text-body-sm">114</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-gender-unisex" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Unisex Essentials"><span class="text-on-surface-variant group-hover:text-on-surface">Unisex Essentials</span></div><span class="text-outline text-body-sm">34</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-gender-women" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Women Oversized"><span class="text-on-surface-variant group-hover:text-on-surface">Women Oversized</span></div><span class="text-outline text-body-sm">28</span></label></div></div><div class="border-b border-outline-variant pb-5"><button type="button" id="btn-filter-silhouette" aria-expanded="true" aria-controls="section-filter-silhouette" class="w-full flex items-center justify-between mb-3 cursor-pointer select-none text-left focus:outline-none focus:ring-1 focus:ring-primary py-1"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Silhouette &amp; Drop</h3><span class="material-symbols-outlined text-on-surface transform transition-transform duration-200 accordion-arrow" data-icon="expand_less">expand_less</span></button><div id="section-filter-silhouette" class="space-y-2" role="region" aria-labelledby="btn-filter-silhouette"><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-silhouette-heavyweight" checked="" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Heavyweight 280 GSM"><span class="text-on-surface font-semibold">Heavyweight 280 GSM</span></div><span class="text-outline text-body-sm">62</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-silhouette-mineral" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Vintage Mineral Wash"><span class="text-on-surface-variant group-hover:text-on-surface">Vintage Mineral Wash</span></div><span class="text-outline text-body-sm">38</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-silhouette-rawhem" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Raw Hem Boxy Cuts"><span class="text-on-surface-variant group-hover:text-on-surface">Raw Hem Boxy Cuts</span></div><span class="text-outline text-body-sm">26</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer group"><div class="flex items-center gap-2.5"><input id="filter-silhouette-graphic" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Graphic Archive Editions"><span class="text-on-surface-variant group-hover:text-on-surface">Graphic Archive Editions</span></div><span class="text-outline text-body-sm">22</span></label></div></div><div class="border-b border-outline-variant pb-5"><button type="button" id="btn-filter-price" aria-expanded="true" aria-controls="section-filter-price" class="w-full flex items-center justify-between mb-3 text-left focus:outline-none focus:ring-1 focus:ring-primary py-1"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Price Range (₹)</h3><span class="font-label-caps text-label-caps text-primary font-bold">INR</span></button><div id="section-filter-price" role="region" aria-labelledby="btn-filter-price"><div class="px-1 mb-4"><label for="price-range-slider" class="sr-only">Maximum Price Slider</label><input id="price-range-slider" aria-label="Maximum price slider" class="w-full h-1 bg-outline-variant appearance-none cursor-pointer accent-inverse-surface" max="4999" min="799" type="range" value="1999"></div><div class="flex items-center gap-2"><div class="flex-1 bg-surface-container-lowest border border-outline-variant px-3 py-1.5 focus-within:border-inverse-surface"><label for="price-min-input" class="font-label-caps text-[10px] text-outline block uppercase cursor-pointer">Min</label><div class="flex items-center text-body-sm font-semibold"><span class="">₹</span><input id="price-min-input" aria-label="Minimum price value" class="w-full bg-transparent p-0 border-none text-body-sm focus:ring-0 text-on-surface ml-0.5" type="number" value="799" min="0" max="5000"></div></div><span class="text-outline-variant font-bold">—</span><div class="flex-1 bg-surface-container-lowest border border-outline-variant px-3 py-1.5 focus-within:border-inverse-surface"><label for="price-max-input" class="font-label-caps text-[10px] text-outline block uppercase cursor-pointer">Max</label><div class="flex items-center text-body-sm font-semibold"><span class="">₹</span><input id="price-max-input" aria-label="Maximum price value" class="w-full bg-transparent p-0 border-none text-body-sm focus:ring-0 text-on-surface ml-0.5" type="number" value="1999" min="0" max="5000"></div></div></div></div></div><div class="border-b border-outline-variant pb-5"><div class="flex items-center justify-between mb-2"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Size</h3><span class="font-label-caps text-[10px] bg-primary-fixed text-on-primary-fixed px-2 py-0.5 font-bold uppercase tracking-wider">Your saved: L</span></div><div class="grid grid-cols-3 gap-2" role="group" aria-label="Size filter selection"><button type="button" class="size-chip h-11 border border-outline-variant text-body-sm font-body-sm hover:border-inverse-surface flex items-center justify-center font-medium bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary" data-size="XS" aria-pressed="false">XS</button><button type="button" class="size-chip h-11 border border-outline-variant text-body-sm font-body-sm hover:border-inverse-surface flex items-center justify-center font-medium bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary" data-size="S" aria-pressed="false">S</button><button type="button" class="size-chip h-11 border border-outline-variant text-body-sm font-body-sm hover:border-inverse-surface flex items-center justify-center font-medium bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary" data-size="M" aria-pressed="false">M</button><button type="button" class="size-chip h-11 bg-inverse-surface text-surface-container-lowest border border-inverse-surface text-body-sm font-body-sm flex items-center justify-center font-bold focus:outline-none focus:ring-1 focus:ring-primary" data-size="L" aria-pressed="true">L</button><button type="button" class="size-chip h-11 border border-outline-variant text-body-sm font-body-sm hover:border-inverse-surface flex items-center justify-center font-medium bg-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary" data-size="XL" aria-pressed="false">XL</button><button type="button" disabled="" aria-disabled="true" class="h-11 border border-outline-variant text-body-sm font-body-sm flex items-center justify-center font-medium bg-surface-container-lowest relative overflow-hidden opacity-60 cursor-not-allowed" title="XXL Out of stock"><span class="text-outline">XXL</span><span class="absolute inset-0 flex items-center justify-center pointer-events-none"><span class="w-full h-px bg-outline -rotate-45"></span></span></button></div></div><div class="border-b border-outline-variant pb-5"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface mb-3">Colorway</h3><div class="grid grid-cols-6 gap-2" role="radiogroup" aria-label="Color selection"><button type="button" role="radio" aria-checked="true" class="color-option w-8 h-8 rounded-full bg-[#1b1b1d] border-2 border-primary ring-1 ring-on-surface focus:outline-none" title="Washed Onyx" data-color="Washed Onyx"></button><button type="button" role="radio" aria-checked="false" class="color-option w-8 h-8 rounded-full bg-[#f3f0ea] border border-outline-variant hover:scale-110 focus:outline-none transition-transform" title="Bone White" data-color="Bone White"></button><button type="button" role="radio" aria-checked="false" class="color-option w-8 h-8 rounded-full bg-[#516600] border border-outline-variant hover:scale-110 focus:outline-none transition-transform" title="Olive Green" data-color="Olive Green"></button><button type="button" role="radio" aria-checked="false" class="color-option w-8 h-8 rounded-full bg-[#3e5668] border border-outline-variant hover:scale-110 focus:outline-none transition-transform" title="Muted Cobalt" data-color="Muted Cobalt"></button><button type="button" role="radio" aria-checked="false" class="color-option w-8 h-8 rounded-full bg-[#c9bfae] border border-outline-variant hover:scale-110 focus:outline-none transition-transform" title="Sandstone" data-color="Sandstone"></button><button type="button" role="radio" aria-checked="false" class="color-option w-8 h-8 rounded-full bg-[#525254] border border-outline-variant hover:scale-110 focus:outline-none transition-transform" title="Heather Charcoal" data-color="Heather Charcoal"></button></div><p id="selected-color-label" class="text-[12px] text-on-surface-variant mt-2 font-label-caps uppercase tracking-wider">Selected: Washed Onyx</p></div><div class="border-b border-outline-variant pb-5"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface mb-3">Fit Profile</h3><div class="space-y-2"><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer"><div class="flex items-center gap-2"><input checked="" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Boxy Oversized"><span class="">Boxy Oversized</span></div><span class="text-label-caps text-primary font-bold">CORE FIT</span></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer"><div class="flex items-center gap-2"><input class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Relaxed Drop-Shoulder"><span class="text-on-surface-variant">Relaxed Drop-Shoulder</span></div></label><label class="flex items-center justify-between text-body-sm font-body-sm cursor-pointer"><div class="flex items-center gap-2"><input class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Regular Architectural"><span class="text-on-surface-variant">Regular Architectural</span></div></label></div></div><div class="border-b border-outline-variant pb-5"><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface mb-3">Textile &amp; Weight</h3><div class="space-y-2 text-body-sm"><label class="flex items-center gap-2 cursor-pointer"><input checked="" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Heavyweight Combed Cotton (280 GSM)"><span class="">Heavyweight Combed Cotton (280 GSM)</span></label><label class="flex items-center gap-2 cursor-pointer"><input class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="100% French Terry Loopback"><span class="text-on-surface-variant">100% French Terry Loopback</span></label><label class="flex items-center gap-2 cursor-pointer"><input class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="Organic Ring-Spun Cotton"><span class="text-on-surface-variant">Organic Ring-Spun Cotton</span></label></div></div><div><h3 class="text-headline-sm font-headline-sm uppercase text-on-surface mb-3">Availability</h3><div class="space-y-2 text-body-sm"><label class="flex items-center gap-2 cursor-pointer"><input checked="" class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="In Stock &amp; Ready to Ship"><span class="">In Stock &amp; Ready to Ship</span></label><label class="flex items-center gap-2 cursor-pointer"><input class="w-4 h-4 rounded-none text-inverse-surface border-outline focus:ring-0 filter-checkbox" type="checkbox" data-filter-name="24h Express Dispatch Hub"><span class="text-on-surface-variant">24h Express Dispatch Hub</span></label></div></div></aside>
+<!-- RIGHT PRODUCT CATALOG AREA -->
+<section class="flex-1 min-w-0">
+<!-- Top Toolbar: View Toggles + Total Count + Sorting -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4"><div class="flex items-center gap-4"><span class="text-body-sm font-body-sm text-on-surface" id="catalog-count-label">Showing <strong class="font-bold">1 – 16</strong> of <strong class="font-bold">148</strong> curated drops</span><div class="h-4 w-px bg-outline-variant hidden sm:block"></div><div class="hidden sm:flex items-center gap-1 border border-outline-variant p-0.5 bg-surface" role="toolbar" aria-label="Catalog grid layout"><button type="button" id="btn-view-grid" aria-pressed="true" class="p-1.5 bg-inverse-surface text-surface-container-lowest focus:outline-none focus:ring-1 focus:ring-primary" title="4-Column Dense Grid" aria-label="4-Column Grid View"><span class="material-symbols-outlined text-sm leading-none" data-icon="grid_view">grid_view</span></button><button type="button" id="btn-view-editorial" aria-pressed="false" class="p-1.5 text-on-surface-variant hover:text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" title="2-Column Editorial View" aria-label="2-Column Editorial View"><span class="material-symbols-outlined text-sm leading-none" data-icon="view_agenda">view_agenda</span></button></div></div><div class="flex items-center gap-3 w-full sm:w-auto justify-end"><label for="catalog-sort-select" class="font-label-caps text-label-caps uppercase text-on-surface-variant">Sort by:</label><div class="relative"><select id="catalog-sort-select" aria-label="Sort drops by" class="bg-surface border border-outline-variant py-2 pl-3 pr-8 text-body-sm font-body-sm text-on-surface appearance-none focus:outline-none focus:border-inverse-surface focus:ring-1 focus:ring-primary cursor-pointer rounded-none"><option value="recommended" selected="">Recommended</option><option value="newest">Newest Drops</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="discount">Biggest Discount</option><option value="rating">Highest Rated</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-2.5 text-base text-on-surface-variant" data-icon="expand_more">expand_more</span></div></div></div>
+<!-- 4-COLUMN PRODUCT GRID (8 Rich Streetwear Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop" id="product-catalog-grid">
+<!-- PRODUCT CARD 1 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<!-- Visual Container with Dual Image Swap -->
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Modern Indian male model wearing an oversized washed charcoal heavyweight t-shirt against a clean concrete architectural background with soft high-key studio daylight, showing structured raw boxy silhouette and dropped shoulders." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFd9YxKsU5HMJlgHb4xsyjLStABDTYB1NAnRZqRNwiJcYPExVVybwjWqo11ebXbuKeoG2_mhGwE5ZeXTZXYUglm_0J5xw4lfGIKncCn2a2HPt6J6h3062iyemKWNEqxJLGxx7dOYt1nus4oQk_6WutE_Pz_PHIK-O596JLvAwVJ43nO0UHQ_ReQOxTr-vTQrGTIEv4h_CMDO87E2k9P5wotub1-SHI0uukfvhRwuevYnYuwyrelN4">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Close up editorial detail of the back graphic print on heavy 280 GSM cotton fabric in muted urban olive and stark black typographic lettering, captured in crisp crisp gallery lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANT7ceYbhmyPUPeqVVmoEShx6DzgK_5OoR7Vg5H9S8RXp1611bzHC2GOI7d-NAP3gKmskFafVLzZ3SS0OyzhaMFkXNfRxfArgtb6fF5s79Mq3G0vQ6BZDMTKJ8YKN5RRZz6N2qeJHtLNq5i3QTTqbhlp7Pbs0QY2RYF5HQR9LoZsR_N44DMSSUNcHlQVtXEXlXE95NQei2TBJ5KjJ_elUdywTtcwbgwZC4hfBftJqAe2RDK58qHz0">
+<!-- Top Badges -->
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    HOT DROP
+                  </span>
+<span class="bg-primary-container text-on-primary-container font-label-caps text-[9px] uppercase px-2 py-0.5 font-bold">
+                    48% OFF
+                  </span>
+</div>
+<!-- Instant Wishlist Heart Toggle -->
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<!-- Hover Quick Size Add Overlay -->
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20 transition-colors">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20 transition-colors">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20 transition-colors">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20 transition-colors">XL</button>
+</div>
+</div>
+</div>
+<!-- Product Info -->
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">LIMITED EDITION [100 PCS]</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#1b1b1d] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#516600] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  ARCH-01 Heavyweight Washed Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  280 GSM • 100% Combed Slub Cotton
+                </p>
+<!-- Pricing Line -->
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,299</span>
+<span class="text-body-sm text-outline line-through">₹2,499</span>
+<span class="text-label-caps text-primary font-bold">SAVE ₹1,200</span>
+</div>
+</div>
+</div>
+<!-- Primary Action Button -->
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 2 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial lookbook portrait of an androgynous model wearing an oversized off-white bone colored drop-shoulder t-shirt in an architectural minimalist brutalist courtyard with natural ambient daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbEfOruN_jitJns00KnjkRQfZmU74xYDaee7DOkZoo-expMn2DleQXhqWbeI7p2-tlrGQ8gqjcp70nEEbSM3piuUl3eFccBWD0YM89wCvVUAwEd_p4HXHY78Gv3GjqMjOfNaha8Zj4jdhdIU0jucjxZu1ICQZl2k9RbE7RQJJGuueOANjCAjphyCVILdXHVPKs08C4OWNKYqHnY5w3Fl6mCro7C2Bdfr9RO5PXYg_bR9T7p9Gi4-A">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Side profile movement shot emphasizing the dramatic boxy drop shoulder silhouette and heavy drape of organic cotton t-shirt in neutral beige and soft shadow tonal palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASz-TXilvqbk45DuMXAuAMHPrLWE-4RMKRFYypm3VrNCpt0CSDVE5iuf-WNYik18Aa2_nZq44sCDrbNBD7LrRIqpet7UM0lMdd2NpB7U0mEw0uMuIrCZcOMYqzMnY2AcqN8gqDXdi6uaFjJZpbnpzLwpII80_sFE7ukMqNHRg6TlnovIIc79nwVxdXCiVaXIXrcx3WtGyY_gIfcnhWgbGhOi934q8IShsmDnLQMwif1PPeEcEP4HI">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-surface-container-highest text-on-surface font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    CORE BASIC
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ARCHIVE REISSUE</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#f3f0ea] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#c9bfae] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Bone Minimal Boxy Oversized Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  300 GSM • Pre-Shrunk Dense Jersey
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,499</span>
+<span class="text-body-sm text-outline line-through">₹2,299</span>
+<span class="text-label-caps text-primary font-bold">35% OFF</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 3 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial streetwear photograph of a model in an acid-wash dark moss olive oversized tee with distressed micro-ribbed collar against a clean architectural gallery wall with moody high-contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ7w4TNd02hpbrOH8Anwbl802gY2FmsFHxsPLwZixMdY8oLr2aWhpIntmSnZbukAzqKQvvpsiL0CU9mGEu3-2sqEQJfMw07moA3PK5OwEbIQU1Os6u4l-UCX2CW0438I9sgBO63qapDdcmnRnRh68C4MkaArK9RgUauSzpNmADVMbAG5G_sUdLsa_eR3gmLuZALh5BT5s5ealeYkFzscpeX-Jly7ztw-PSZo7_ZbQKa6qK3YoJ3_4">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Back view of male model in street apparel highlighting raw artisanal vintage acid wash finish on heavyweight 320 GSM French Terry knit cotton." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD378fVXODE6Jx-TSm080E_UniOZeyujkrfCrf-xcxXOjFcFUe6EMLwWqj7HxRzlZkcH5H8ZWsF0kQeynUZ6J60-1GWIkZM4s_W8Z_tB2mB4saXPDU6MvnOcd8F5anWrNY2oRylmO0_0TnvzHwhnETUphn38tH1Yuaqz_EAnhNzN_AQntwaD1qRcOWorKNSUVHQpQOFBAwwBzcWBdGd0QiwPWLb29sJPMPlM5dFMorIQixBN38DeNM">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-primary text-on-primary font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    TRENDING
+                  </span>
+<span class="bg-error-container text-on-error-container font-label-caps text-[9px] uppercase px-2 py-0.5 font-bold">
+                    52% OFF
+                  </span>
+</div>
+<!-- Wishlist Active Toggle -->
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ONLY 14 UNITS LEFT</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#516600] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#1b1b1d] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Acid Wash Moss Heavy Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  320 GSM • Hand-Dyed Vintage Mineral
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,199</span>
+<span class="text-body-sm text-outline line-through">₹2,499</span>
+<span class="text-label-caps text-primary font-bold">SAVE ₹1,300</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 4 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial lookbook shot of a female model wearing a structured muted cobalt blue oversized drop-shoulder heavyweight tee with minimal typography on the breast pocket in a bright geometric light-filled studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8XZ9GzoGCoFF-Odql9_WR2Ma0pFcUnmh0LR_DqdHBd6yjmxH79ABFEMWPRZ8UC4S_ULBREJ0xpe90NPhjXnjovmusFFIQ-OZzp_uGdERcpuWpnSWUPS4FtwAD9-MWbuBLCr_6cBl9KzVNApUlhoV93bQfNTrXSrWtzVdZTqxcTOYDrZ4SdkRSmvXSu-RUKyhYlDgPeU2KFuu5jdKmUgQDb6NjB2ovGehLkrlHQEC-s6j_80VcHoE">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Textural close-up shot of deep cobalt cotton weave fabric with tight hairline stitching and heavy 1.25-inch ribbed collar detail under clean studio softbox light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaWMfKIi-Tqzf_HSw-aAMFPfu3ZW5qFd2MZV1CFyvuOXyGj5EkFSWXi-X0lBSQBEkqp4CP6TP0S1K73dViw4oJtnxYcRaLWfx1CEGBh4rl31c9BFl9mhRtupy9KGJwxNWpyTU67qADVERaaDBX20mljO29wsZFUp7YI9KABeTnH5LIssSkrfaWPmBsEPtCKB5VC0VloOX2pHJmdhRMg7JDNoDDjYQ0yMsl-dOvnFWNkyDAGRwNBhU">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    UNISEX
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">LIMITED [50 PCS]</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#3e5668] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Muted Cobalt Architectural Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  290 GSM • Combed Compact Yarn
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,399</span>
+<span class="text-body-sm text-outline line-through">₹2,199</span>
+<span class="text-label-caps text-primary font-bold">36% OFF</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 5 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial fashion lookbook photograph of a male model wearing an oversized sand beige raw-edge hem boxy heavyweight t-shirt in an outdoor brutalist concrete staircase environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgFqRYN16wh-GmpyuNOnw28Dn9rPis6P6Spf7YeiLswbPiwzeT9zBdyuQrm5xPLNb9hl3hupx11YAvq8Pe2L2l_M7tJ7uEgfEgiX5f9YPXGMt2QyxUpam1Kwuf1jVrFgwJUGvWJS3Mhpw4HOjTbGq6Q5UU1gEsEXIc-1inpo4URjuiHFruKYZjGcpdQc8iEive6x66yV0hZG2MFlW7Gg1raz5cfN87FzEnBUnbVOmL4pcR8xYwgvY">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Close up architectural detail of raw unhemmed bottom edge and distressed collar on heavy beige cotton fabric under crisp clean light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDI6qqhTZqM8BiZg4-2NE0Cx2vmE4Hg3zbljAuOy2rBv00205uppqCX6TNhkByhnok-eeOY0WaHqBHDZ66jXJMV2m6pCufXHhmDg1agZ76Nv-M3U7ANk7cCYXB-1DvxtmAbcIxRRdkhAOwRE77XWAfjJBa89k5VvHIS4I4cKW2obGagtbNlttmJM87eU4QQaFF52cs-feZ8yBjNKJ0N9t1lQXFS19UFxM7UXR4sU0Nuhaa7Si35HM">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    NEW ARRIVAL
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">CORE ARCHIVE</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#c9bfae] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#f3f0ea] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Raw Hem Sandstone Boxy Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  280 GSM • Raw Edge Architectural Hem
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,249</span>
+<span class="text-body-sm text-outline line-through">₹1,999</span>
+<span class="text-label-caps text-primary font-bold">37% OFF</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 6 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial lookbook fashion photograph of a model in a heather charcoal grey minimal typography streetwear heavyweight tee standing against sharp urban architectural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Ucn0b3m9ABjji5ar9zVM5Jypui5SJoP29c4Q9SovRa0SQ7Dbi9aqoKdOPbN-bxJTDCyIi2QtMKTtG92R50ZIIVMyF9MHkXqp1HWO8Wnhbx5WHY_OjnOMsvLgiddUFzK2kHHu80W8ZaZeT3EYTcL1ptbKwUe9v5r4LUKT2ad3ww69Clxjp8ALK6s_Ign6_fmcmLqRXiV4tbwFofHDJWoUcsOaMpmfgRvDOYqZKR85JEB8t7Uc2y8">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Action candid shot highlighting the heavy drape and non-crease structural silhouette of 300 GSM melange charcoal knit jersey in natural diffused light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSD3eQUfDfbGk2xCh-KZ79nrbDix5JKr1P3_1YVNJBPfZcmYp7dzdDb2-cuZcKKGNYV8YNQ5P1MzK-dncdTgOqJOLanZkYryIW9FbAA7NtnE_4GEWp9uvcHIf_zNeOOwvHF-9GG8lHEYw6Lv92O0pDuMI37eCXiFVjZs90ZMYL1CY5sFpr60YKHLj5J28c7C-WouCxLUAVGbHoyrFU1ht7IEvWY9Ktell1z9BvbOsH936dDfhC9PE">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    BESTSELLER
+                  </span>
+<span class="bg-primary-container text-on-primary-container font-label-caps text-[9px] uppercase px-2 py-0.5 font-bold">
+                    45% OFF
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">RESTOCKED TODAY</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#525254] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#1b1b1d] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Melange Charcoal Heavyweight Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  300 GSM • Melange Heather Thread
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,349</span>
+<span class="text-body-sm text-outline line-through">₹2,499</span>
+<span class="text-label-caps text-primary font-bold">SAVE ₹1,150</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 7 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial lookbook portrait of an Indian male model wearing an artisanal pitch black t-shirt with high density screen printed geometric Sanskrit typography on the chest, in a minimal daylight gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6yyfu6JEE0gfxputNlN6Z-kEagdPT9PrbVdHZnZrhRxBMTU_A8HAOY1JU4Mlm0g1lDcxyjsZNF9CyPrlPbqpe_JTnHbzrhOnpZ_sHIwo4wZlKdVZX_p41dw6GIUnKiktXn2AkcFZVG6zhPxxfR5kjDnmOfkseLQM7qL2V-O-kVnVBSd-11OxnL64j3ANsnvoOUTZ9suAmBBgiiD0TrdsdGpX_Wu-KgKVsczKS6m3yUofVhTTDsgA">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Close up photographic macro shot of textured screen print ink and heavy cotton fiber weave in stark monochromatic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVLrcU0xj8fkCM-8wg71DlxGVoVyhB9cqkPiZ6AvFdCJLbAa8S2KYkdpxnagbTDrZOJbmV3JnNsyBfHxBSt9TUfnCHU__pOavN2l57H8dhSEt99alq-yF3SfzYJlqj4lalkkkBX5tLZYJdxk5Ci6ni2qE6D_kCVH5R8c59Liaw6CQcOmC9XJp4Xq-kNObV2TDqUgQNK0g5CuteZvUpQJYdPcyYFYc_4uU8CzXlFb3qIqg_urtgNE8">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    ARCHIVE DROP
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">LIMITED [75 PCS]</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#1b1b1d] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Kala Typography Oversized Tee
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  280 GSM • High-Density Screen Print
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,599</span>
+<span class="text-body-sm text-outline line-through">₹2,599</span>
+<span class="text-label-caps text-primary font-bold">38% OFF</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+<!-- PRODUCT CARD 8 -->
+<div class="product-card group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+<div>
+<div class="relative product-image-ratio overflow-hidden bg-[#f5f3ee]">
+<img class="primary-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300" data-alt="Editorial streetwear photograph of a female model wearing an olive green minimalist collarless heavy polo tee against a serene light-toned concrete structural environment with sharp sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt39feGa9KQ2N91pkRVX5l4F9y1teJOARcW0ZY_gTMMooR08w2w2SJykKXZ8WGdecX9yTJHp8rdWjv9qvOla_YEf8KRSkjcYZnMeLnG_4h9ow3zJFhAZ2yuM7T-42qbup6fYJe6B8mnLLFfPP9IyIThYnfI0eJxxKWOSZ6LK5Dq1q-0B8q_4WenIQkbxthh9TvdyEm2qdRZnZKHxvkjkqbFvEyd2Tq7kEfRx5Bn5QxZdvCmTawtcY">
+<img class="secondary-img absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-300" data-alt="Close up architectural detail of minimal hidden placket and tailored boxy sleeve cuffs on dark olive French terry cloth under soft gallery studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH-qg_3n7Dvq1fK7CYh-QRNKj9CAD615OHyd5EhUj1lXdpbILpSIyj8UXvowFPV1tdvFBV1nGuWw6MzZHbE3EYbMhvWe3x67eQogjE9OpyL7gSH2mLG95xz1jI0U8hg6UjRC2dTRw7_HxOPNz81jpOPJhR8V08MX6j9kD3zTjvqTYFgEGjAyvutbKvj31IW8gcfSMzoEmQREzCCmrwNV-1hG6NyNr8QBfC1PffV-wOlNFOcwwin9I">
+<div class="absolute top-2 left-2 flex flex-col gap-1 z-10">
+<span class="bg-primary-container text-on-primary-container font-label-caps text-[9px] uppercase px-2 py-0.5 tracking-widest font-bold">
+                    COLLARLESS POLO
+                  </span>
+</div>
+<button aria-label="Add to Wishlist" class="absolute top-2 right-2 z-10 w-8 h-8 bg-surface-container-lowest/90 border border-outline-variant flex items-center justify-center hover:bg-inverse-surface hover:text-white transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute inset-x-2 bottom-2 z-10 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-200 bg-inverse-surface/95 text-surface-container-lowest p-2">
+<span class="font-label-caps text-[10px] block text-center uppercase tracking-wider text-surface-container-highest mb-1">Quick Size Select</span>
+<div class="grid grid-cols-4 gap-1 text-center font-bold text-xs">
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">S</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">M</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">L</button>
+<button class="hover:bg-primary-container hover:text-on-primary-container py-1 bg-surface-container-highest/20">XL</button>
+</div>
+</div>
+</div>
+<div class="p-3.5 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">EDITORIAL CAPSULE</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 bg-[#516600] border border-outline inline-block"></span>
+<span class="w-2.5 h-2.5 bg-[#1b1b1d] border border-outline inline-block"></span>
+</div>
+</div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                  Minimalist Collarless Drop Polo
+                </h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">
+                  280 GSM • French Terry Pique
+                </p>
+<div class="flex items-baseline gap-2 pt-1 border-t border-outline-variant">
+<span class="font-price-md text-price-md font-bold text-on-surface">₹1,799</span>
+<span class="text-body-sm text-outline line-through">₹2,899</span>
+<span class="text-label-caps text-primary font-bold">38% OFF</span>
+</div>
+</div>
+</div>
+<button class="w-full h-11 bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span class="">Add to Bag</span>
+</button>
+</div>
+</div>
+<!-- PAGINATION BAR -->
+<div class="mt-12 pt-8 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-6"><div class="text-body-sm font-body-sm text-on-surface-variant" id="pagination-summary">Page <strong class="text-on-surface font-semibold" id="current-page-num">1</strong> of <strong class="text-on-surface font-semibold">12</strong> (Showing 16 of 148 products)</div><nav class="flex items-center gap-1" aria-label="Pagination Navigation"><button type="button" aria-label="Page 1" aria-current="page" class="pagination-btn w-10 h-10 bg-inverse-surface text-surface-container-lowest font-semibold flex items-center justify-center text-body-sm focus:outline-none focus:ring-1 focus:ring-primary">1</button><button type="button" aria-label="Page 2" class="pagination-btn w-10 h-10 border border-outline-variant bg-surface-container-lowest hover:border-inverse-surface text-on-surface font-medium flex items-center justify-center text-body-sm transition-colors focus:outline-none focus:ring-1 focus:ring-primary">2</button><button type="button" aria-label="Page 3" class="pagination-btn w-10 h-10 border border-outline-variant bg-surface-container-lowest hover:border-inverse-surface text-on-surface font-medium flex items-center justify-center text-body-sm transition-colors focus:outline-none focus:ring-1 focus:ring-primary">3</button><button type="button" aria-label="Page 4" class="pagination-btn w-10 h-10 border border-outline-variant bg-surface-container-lowest hover:border-inverse-surface text-on-surface font-medium flex items-center justify-center text-body-sm transition-colors focus:outline-none focus:ring-1 focus:ring-primary">4</button><span class="w-8 text-center text-outline font-bold" aria-hidden="true">...</span><button type="button" aria-label="Page 12" class="pagination-btn w-10 h-10 border border-outline-variant bg-surface-container-lowest hover:border-inverse-surface text-on-surface font-medium flex items-center justify-center text-body-sm transition-colors focus:outline-none focus:ring-1 focus:ring-primary">12</button><button type="button" id="btn-next-page" aria-label="Go to next page" class="h-10 px-4 ml-2 border border-outline-variant bg-surface-container-lowest hover:bg-inverse-surface hover:text-surface-container-lowest text-on-surface font-label-caps text-label-caps uppercase flex items-center gap-1.5 transition-all focus:outline-none focus:ring-1 focus:ring-primary"><span class="">Next</span><span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button></nav></div>
+</section>
+</div>
+</main>
+<!-- NEWSLETTER / DROPS SIGN-UP BANNER -->
+<section class="w-full bg-surface-container border-y border-outline-variant py-12">
+<div class="max-w-[1440px] mx-auto px-margin-desktop flex flex-col lg:flex-row items-center justify-between gap-8">
+<div>
+<span class="font-label-caps text-label-caps text-primary font-bold uppercase tracking-widest block mb-1">
+          NEVER MISS A LIMITED RUN
+        </span>
+<h2 class="text-headline-lg font-headline-lg uppercase text-on-surface tracking-tight">
+          PRIORITY DROP ACCESS // ARCHIVE PASS
+        </h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl">
+          Sign up to receive 15-minute early access on all Friday midnight releases, secret lookbook previews, and deadstock restock pings.
+        </p>
+</div>
+<div class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch gap-2 max-w-md">
+<input class="bg-surface-container-lowest border border-outline-variant px-4 py-3 text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-inverse-surface rounded-none min-w-[280px]" placeholder="Enter your phone or email..." type="email">
+<button class="bg-inverse-surface text-surface-container-lowest font-label-caps text-label-caps uppercase tracking-wider px-6 py-3.5 hover:bg-primary-container hover:text-on-primary-container transition-all whitespace-nowrap">
+          Get Access
+        </button>
+</div>
+</div>
+</section>
+<!-- FOOTER (Shared Component: Footer) -->
+<footer class="bg-surface-container dark:bg-inverse-surface text-primary dark:text-inverse-primary w-full border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-2xl flex flex-col gap-space-xl">
+<!-- Footer Top Editorial Columns -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 pb-10 border-b border-outline-variant dark:border-outline">
+<!-- Col 1: Brand Philosophy & Statement (2 cols wide) -->
+<div class="lg:col-span-2 space-y-4">
+<span class="text-headline-md font-headline-md uppercase text-on-surface dark:text-inverse-on-surface block tracking-tight">
+            HUSTLE WEAR
+          </span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant max-w-sm">
+            Architectural silhouettes, raw urban momentum, and heavyweight textiles crafted in India for the global subculture purist. Every drop is produced in disciplined, finite editions.
+          </p>
+<div class="flex items-center gap-4 text-on-surface pt-2">
+<a class="w-8 h-8 border border-outline-variant flex items-center justify-center hover:border-inverse-surface transition-colors" href="#">
+<span class="font-label-caps font-bold text-xs">IG</span>
+</a>
+<a class="w-8 h-8 border border-outline-variant flex items-center justify-center hover:border-inverse-surface transition-colors" href="#">
+<span class="font-label-caps font-bold text-xs">X</span>
+</a>
+<a class="w-8 h-8 border border-outline-variant flex items-center justify-center hover:border-inverse-surface transition-colors" href="#">
+<span class="font-label-caps font-bold text-xs">YT</span>
+</a>
+<a class="w-8 h-8 border border-outline-variant flex items-center justify-center hover:border-inverse-surface transition-colors" href="#">
+<span class="font-label-caps font-bold text-xs">DS</span>
+</a>
+</div>
+</div>
+<!-- Col 2: Shop Navigation -->
+<div class="space-y-3">
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface">
+            Shop
+          </h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Heavyweight Tees</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Drop Shoulder</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">French Terry Hoods</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Cargo Pants</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Archive Editions</a></li>
+</ul>
+</div>
+<!-- Col 3: Help & Support -->
+<div class="space-y-3">
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface">
+            Help
+          </h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Order Tracking</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Dispatch Timeline</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">7-Day Return Portal</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Size Fit Matrix</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Customer Care PIN Hotline</a></li>
+</ul>
+</div>
+<!-- Col 4: Account Details -->
+<div class="space-y-3">
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface">
+            Account
+          </h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Member Profile</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Saved Measurements</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Wishlist Archive</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Hustle Pass Club</a></li>
+</ul>
+</div>
+<!-- Col 5: Company & Connect -->
+<div class="space-y-3">
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface">
+            Company
+          </h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Our Manifesto</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Textile Mills (Gujarat)</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Sustainability Audit</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Connect</a></li>
+</ul>
+</div>
+</div>
+<!-- Payment & Security Badges -->
+<div class="flex flex-wrap items-center justify-between gap-4 py-2 text-label-caps text-label-caps uppercase text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="font-bold text-on-surface">SECURE CHECKOUT &amp; GATEWAYS:</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-outline-variant font-bold text-on-surface">UPI</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-outline-variant font-bold text-on-surface">RuPay</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-outline-variant font-bold text-on-surface">Visa</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-outline-variant font-bold text-on-surface">Mastercard</span>
+<span class="px-2 py-1 bg-surface-container-lowest border border-outline-variant font-bold text-on-surface">NetBanking</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary" data-icon="verified_user">verified_user</span>
+<span class="">100% ENCRYPTED TRANSACTION PROTOCOL</span>
+</div>
+</div>
+<!-- Footer Bottom Copyright Text (Exact from JSON) -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4 border-t border-outline-variant text-body-sm font-body-sm text-on-surface-variant">
+<p class="">© 2025 HUSTLE WEAR ARCHIVE. ALL RIGHTS RESERVED. ALL PRICES IN INR (₹).</p>
+<div class="flex items-center gap-6">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms of Service</a>
+<a class="hover:underline" href="#">Indian Cyber Security Compliance</a>
+</div>
+</div>
+</div>
+</footer><div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-inverse-surface text-surface-container-lowest px-5 py-3 shadow-lg flex items-center gap-3 border border-outline-variant"><span class="material-symbols-outlined text-primary-fixed">check_circle</span><span id="toast-message" class="font-label-caps uppercase tracking-wider text-xs">Added to bag</span></div>
+
+
+</body></html>

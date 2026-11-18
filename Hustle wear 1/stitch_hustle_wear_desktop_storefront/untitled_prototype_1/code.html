@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HUSTLE WEAR — Contemporary Elevated Streetwear Archive</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Syne:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Script -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#9ca188",
+            "surface-container-high": "#eae7ea",
+            "surface-dim": "#dcd9dc",
+            "on-background": "#1b1b1d",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e5e1e4",
+            "on-primary-container": "#2d3a00",
+            "on-tertiary-fixed": "#191d0c",
+            "on-surface-variant": "#454839",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#111d27",
+            "primary": "#516600",
+            "secondary-fixed-dim": "#bbc8d6",
+            "on-tertiary-fixed-variant": "#444934",
+            "surface": "#fcf8fb",
+            "error": "#ba1a1a",
+            "outline-variant": "#c6c8b4",
+            "primary-fixed": "#d2ee7f",
+            "inverse-on-surface": "#f3f0f2",
+            "surface-tint": "#516600",
+            "inverse-primary": "#b7d166",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#c4c9ae",
+            "on-secondary-fixed-variant": "#3c4854",
+            "background": "#fcf8fb",
+            "secondary-container": "#d7e4f3",
+            "inverse-surface": "#303032",
+            "primary-container": "#8fa842",
+            "primary-fixed-dim": "#b7d166",
+            "surface-container-low": "#f6f3f5",
+            "on-surface": "#1b1b1d",
+            "on-primary": "#ffffff",
+            "surface-bright": "#fcf8fb",
+            "tertiary-fixed": "#e0e5c9",
+            "on-primary-fixed": "#161e00",
+            "outline": "#767967",
+            "on-primary-fixed-variant": "#3c4d00",
+            "surface-container-highest": "#e5e1e4",
+            "surface-container": "#f0edef",
+            "secondary-fixed": "#d7e4f3",
+            "tertiary": "#5b614b",
+            "on-tertiary-container": "#333824",
+            "secondary": "#53606c",
+            "on-secondary-container": "#596672"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "space-3xl": "6rem",
+            "gutter-desktop": "2rem",
+            "margin-desktop": "4rem",
+            "space-2xl": "4rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-tablet": "2.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Syne"],
+            "price-lg": ["Hanken Grotesk"],
+            "price-md": ["Hanken Grotesk"],
+            "headline-md": ["Syne"],
+            "display-hero-mobile": ["Syne"],
+            "body-lg": ["Hanken Grotesk"],
+            "display-hero": ["Syne"],
+            "body-sm": ["Hanken Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "headline-xl-mobile": ["Syne"],
+            "headline-sm": ["Hanken Grotesk"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-xl": ["Syne"],
+            "label-caps": ["Hanken Grotesk"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-lg": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" }],
+            "display-hero": ["84px", { "lineHeight": "92px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #767967;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f0edef;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 26s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container relative">
+<!-- TOP RUNNING MARQUEE TICKER -->
+<div class="bg-inverse-surface text-inverse-on-surface text-label-caps font-label-caps uppercase border-b border-outline overflow-hidden py-2 tracking-widest z-50 relative select-none">
+<div class="animate-marquee whitespace-nowrap flex items-center gap-12 font-semibold">
+<span>FREE SHIPPING PAN-INDIA ON ORDERS ABOVE ₹999</span>
+<span>•</span>
+<span>7-DAY EFFORTLESS RETURNS &amp; EXCHANGES</span>
+<span>•</span>
+<span>100% COMBED COTTON 280 GSM STRUCTURAL KNIT</span>
+<span>•</span>
+<span>NEW DROP '25 IS LIVE</span>
+<span>•</span>
+<span>DELIVERING TO 26,000+ PIN CODES PAN-INDIA</span>
+<span>•</span>
+<span>FREE SHIPPING PAN-INDIA ON ORDERS ABOVE ₹999</span>
+<span>•</span>
+<span>7-DAY EFFORTLESS RETURNS &amp; EXCHANGES</span>
+<span>•</span>
+<span>100% COMBED COTTON 280 GSM STRUCTURAL KNIT</span>
+<span>•</span>
+<span>NEW DROP '25 IS LIVE</span>
+<span>•</span>
+<span>DELIVERING TO 26,000+ PIN CODES PAN-INDIA</span>
+</div>
+</div>
+<!-- PERSISTENT TOP APP BAR (Shared Components Exact Blueprint) -->
+<header class="bg-surface dark:bg-inverse-surface docked full-width top-0 sticky z-40 border-b border-outline-variant dark:border-outline">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop flex items-center justify-between h-20 relative">
+<!-- Brand Logo Anchor -->
+<div class="flex items-center gap-10">
+<a class="text-headline-md font-headline-md tracking-tight uppercase text-on-surface dark:text-inverse-on-surface hover:opacity-90 transition-opacity" href="#">
+          HUSTLE WEAR
+        </a>
+<!-- Desktop Navigation Items -->
+<nav class="hidden lg:flex items-center space-x-7 h-20">
+<a class="text-on-surface dark:text-inverse-on-surface border-b-2 border-primary font-body-md h-full flex items-center px-1" href="#men">Men</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md h-full flex items-center px-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#women">Women</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md h-full flex items-center px-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#unisex">Unisex</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md h-full flex items-center px-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#categories">Categories</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-body-md h-full flex items-center px-1 hover:text-primary dark:hover:text-primary-fixed transition-colors duration-150" href="#explore">Explore</a>
+<a class="text-error font-body-md font-semibold h-full flex items-center px-1 hover:opacity-80 transition-opacity" href="#sale">Sale</a>
+</nav>
+</div>
+<!-- Search and Trailing Interactive Actions -->
+<div class="flex items-center gap-5">
+<!-- Interactive Search Bar -->
+<div class="relative hidden md:block w-72">
+<div class="flex items-center border border-outline-variant bg-surface-container-lowest px-3 py-2 text-body-sm font-body-sm focus-within:border-on-surface transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input autocomplete="off" class="w-full bg-transparent border-0 p-0 text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:ring-0 focus:outline-none" id="mainSearchInput" placeholder="Search heavyweight tees, cargos..." type="text"/>
+<span class="material-symbols-outlined text-[18px] text-outline cursor-pointer hidden hover:text-on-surface" id="searchClearBtn">close</span>
+</div>
+<!-- Live Search Overlay Dropdown -->
+<div class="hidden absolute top-full left-0 right-0 mt-1 bg-surface-container-lowest border border-outline-variant shadow-lg z-50 p-4" id="searchDropdown">
+<p class="text-label-caps font-label-caps text-outline uppercase mb-2">Popular In Streetwear</p>
+<div class="flex flex-col gap-2">
+<a class="search-suggest-item flex items-center justify-between text-body-sm font-body-sm py-1.5 px-2 hover:bg-surface-container hover:text-primary" href="#trending">
+<span>Heavy Boxy Drop-Shoulder Tee</span>
+<span class="text-label-caps text-outline font-label-caps">₹1,499</span>
+</a>
+<a class="search-suggest-item flex items-center justify-between text-body-sm font-body-sm py-1.5 px-2 hover:bg-surface-container hover:text-primary" href="#trending">
+<span>Technical Tactical Multi-Pocket Cargo</span>
+<span class="text-label-caps text-outline font-label-caps">₹2,899</span>
+</a>
+<a class="search-suggest-item flex items-center justify-between text-body-sm font-body-sm py-1.5 px-2 hover:bg-surface-container hover:text-primary" href="#trending">
+<span>Monsoon Acid-Wash Zip Hoodie 450 GSM</span>
+<span class="text-label-caps text-outline font-label-caps">₹3,499</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Trailing Action Icons -->
+<div class="flex items-center gap-3">
+<!-- Notification Bell -->
+<button class="relative p-2 text-on-surface hover:text-primary active:scale-95 transition-all" id="openNotificationsBtn">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<!-- Wishlist Trigger -->
+<button class="flex items-center gap-1.5 px-3 py-2 border border-outline-variant hover:border-on-surface text-body-sm font-body-sm transition-colors" id="wishlistTrigger">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+<span class="hidden sm:inline">Wishlist</span>
+<span class="font-semibold text-primary font-body-sm" id="wishlistCountBadge">(2)</span>
+</button>
+<!-- Cart Trigger (Trailing Primary Action) -->
+<button class="flex items-center gap-2 bg-on-surface text-surface px-4 py-2 hover:bg-primary hover:text-on-primary transition-colors" id="openCartBtn">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="font-body-md font-semibold">Bag (<span id="cartCountHeader">3</span>)</span>
+</button>
+<!-- Account Icon -->
+<button class="p-2 border border-outline-variant text-on-surface hover:border-on-surface hover:text-primary transition-colors" title="Account">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- HERO SECTION (High-Impact Streetwear Editorial) -->
+<section class="relative w-full border-b border-outline-variant bg-surface-container-low overflow-hidden">
+<div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 min-h-[720px]">
+<!-- Hero Left Typography & Architectural Framing -->
+<div class="lg:col-span-6 px-margin-desktop py-space-3xl flex flex-col justify-between border-r border-outline-variant">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-highest border border-outline mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="text-label-caps font-label-caps text-on-surface uppercase tracking-widest">AUTUMN / MONSOON DROP '25</span>
+</div>
+<h1 class="text-display-hero font-display-hero text-on-surface tracking-tighter uppercase leading-none mb-6">
+              WEAR YOUR<br/>HUSTLE<span class="text-primary">.</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-md mb-8">
+              Everyday essentials. Elevated streetwear. Made for whatever comes next with 280-450 GSM structural fabrics crafted for Indian climates.
+            </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="px-8 py-3.5 bg-on-surface text-surface text-label-caps font-label-caps uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2" href="#men">
+                SHOP MEN <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="px-8 py-3.5 border border-on-surface text-on-surface text-label-caps font-label-caps uppercase tracking-wider hover:bg-on-surface hover:text-surface transition-colors" href="#women">
+                SHOP WOMEN
+              </a>
+<a class="px-6 py-3.5 text-on-surface text-label-caps font-label-caps uppercase tracking-wider underline hover:text-primary transition-colors" href="#lookbook">
+                EXPLORE COLLECTION
+              </a>
+</div>
+</div>
+<!-- Hero Sub-metrics Specs -->
+<div class="grid grid-cols-3 gap-6 pt-12 border-t border-outline-variant mt-12">
+<div>
+<span class="text-price-lg font-price-lg text-on-surface block">280 GSM</span>
+<span class="text-label-caps font-label-caps text-outline uppercase">Heavy Single Jersey</span>
+</div>
+<div>
+<span class="text-price-lg font-price-lg text-on-surface block">Zero-Shrink</span>
+<span class="text-label-caps font-label-caps text-outline uppercase">Silicone Pre-Washed</span>
+</div>
+<div>
+<span class="text-price-lg font-price-lg text-on-surface block">Pan-India</span>
+<span class="text-label-caps font-label-caps text-outline uppercase">Express Dispatch</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Hero Visual Canvas -->
+<div class="lg:col-span-6 relative bg-surface-container flex items-center justify-center p-8 lg:p-0">
+<div class="w-full h-full min-h-[500px] relative overflow-hidden group">
+<img class="w-full h-full object-cover grayscale contrast-105 group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Editorial lookbook photograph of an Indian male streetwear model standing in an architectural brutalist concrete courtyard in Mumbai. The model wears an oversized heavy earth-toned sage olive boxy graphic tee paired with structured technical charcoal grey multi-pocket cargo pants and chunky minimalist sneakers. Crisp natural sunlight casts geometric shadows, evoking elevated modern subculture aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCODsbj35EZvdxRnOgPSjTIPpVC2h1vt189TIrvD9hp_WpVIrDmlHrGdgux9y8pDWpcP1b7sRH8jVEodwRibsyZxmNEQG-I5kmn1VQiUso1U8-WIcvc7A8Y42pbYV8z5oQY70WFqMAdcyYO20zoGwsDKx4dFCXmmEpJmZEchrUzCcJYZLnBnQZZdnghIwaTU3Q-cXhCxbPatnvvh4_opNHVghqtozRQHzHch-tIvdu0PGkPXI-I5YA"/>
+<!-- Badge Overlay on Photography -->
+<div class="absolute bottom-8 left-8 bg-surface/90 backdrop-blur-sm border border-outline-variant p-4 max-w-xs">
+<span class="text-label-caps font-label-caps text-primary uppercase block">Featured Silhouette</span>
+<p class="text-headline-sm font-headline-sm text-on-surface">Archive 09: Boxy Concrete Fit</p>
+<p class="text-price-md font-price-md text-on-surface mt-1">₹2,199 <span class="line-through text-outline font-normal text-body-sm">₹3,499</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED CATEGORIES SECTION (7 Architectural Visual Cards) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-3xl border-b border-outline-variant" id="categories">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<span class="text-label-caps font-label-caps text-primary uppercase tracking-widest block mb-2">ARCHITECTURAL GRID</span>
+<h2 class="text-headline-xl font-headline-xl text-on-surface tracking-tight uppercase">Featured Categories</h2>
+</div>
+<a class="text-label-caps font-label-caps uppercase tracking-wider text-on-surface hover:text-primary flex items-center gap-1 mt-4 md:mt-0" href="#all-categories">
+          VIEW ARCHIVE DIRECTORY <span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- Bento-inspired Asymmetric Category Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: Oversized T-Shirts (Col span 2) -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden sm:col-span-2 aspect-[16/9] flex flex-col justify-end p-8">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial close-up of heavyweight drop-shoulder graphic streetwear t-shirts neatly folded and stacked on an industrial raw travertine slab. Soft daylight accentuates the textured 280 GSM cotton knit in bone white, faded black, and muted olive green color tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFaW64ZEu2IHL-9JgtM4WrvT4qRK89ioTlqXN33drMAVwYgoyBpGm1T8-K-03aqAlD8C5WpxV-C02Ees8OwbnOUWN-lzZpkkxUNmsbjDnsj2Vcn8bYlW0m6bp5GWSxCzJH9d8SrPST8OrmtZQoFcXwBVFkDDw4645pUmZj18rvIn3_LIpGyuOht--xvBxwIDcDMAzodLVUBY9Vym8s0sJy6ZzSPTNQKUTRl-YHCc0duCG6WFvj4rM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">01 / ARCHIVE FOUNDATION</span>
+<h3 class="text-headline-lg font-headline-lg uppercase text-surface">T-Shirts</h3>
+<p class="text-body-sm font-body-sm text-surface-variant max-w-sm mb-4">240-280 GSM pure combed cotton. Double-needle stitch collar.</p>
+<span class="inline-flex items-center gap-2 text-label-caps font-label-caps text-surface uppercase group-hover:translate-x-2 transition-transform">
+              EXPLORE TEES <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Category 2: Hoodies & Sweatshirts -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Streetwear model photographed from behind wearing a structured 450 GSM heavyweight hoodie with a minimal graphic embroidery on the hood, leaning on an exposed raw concrete brutalist column in a studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCISlgXNfX62TbKt3zGCU1WAUMcCt_rnJ4EEvJfmr67i4YzkEndebCa9uceSCGAUE2dTX40gKfVIxx83ujYzhIMmRnKpa8_VZiq3ONCHFoK2ir_67OWP6mnA5f4XFZKLX-Scpyj2Ylz2KpJYoIs_FI5-m1kdNEhn8rmBKYcA9SjgbQOKNqgpJKwMPgC6D64WtoTJK0A3Ztx3qGVTfhPWd_wxhGVE-wWu6Mst3zBSd2niTYcPoJuPUw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">02 / FLEECE</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Hoodies &amp; Sweats</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Category 3: Cargo Pants -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial look of relaxed wide-leg tactical streetwear cargo pants in deep olive drab featuring multiple modular snap pockets, worn with technical low-profile sneakers against a stark minimalist white wall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc-thEYTRGvyoewhkMZyBWiTL1jZ0nSnHptcF1_-JZ09aiqp1ioRh4OLNZ0079MS4RHQzXLnxh-fmGQafWS1r5T6uFayUbaVXE-epb86kbffV0sNA_09TQBpIVxz9_oKexjhwqqVt3bWeVjSu7A3r3_de2exTaU7smw7MMcp9KiNK9T5jwQFV6aedD2Xi1k31kK85aTEwnxc1MHCNQ6be5CJb5yUEsJYZVtsTWQqRd5P7C4vWxVPg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">03 / TECHNICAL</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Cargo Pants</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Category 4: Denim & Jeans -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal raw selvedge denim jeans laid flat on a steel table, showcasing detailed copper rivets, heavy textured Japanese twill weave, and precision tailored stitching in an editorial studio lighting setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4zc5OzHA5R2yBdktM4y5ZcpEaDHpBBJ26G40ikSRyO2SZD-OT8MXIAV-n8x9C1ffdpO68k2piQpBRXECp0Qi48C2zTeBJd_tW5ghS7te2gHFgzWflcUTiButLDElM4Ja4LcLq2ESAx_ZDA_Owl3mxfEAyyd-UAO2YYaLvC2_GhEB8nrZ_D1YhHWxmB_j5IZgWgDOOw-xqTaY0Uf0gC2QlPGkF54U-kjvhVeqi9ToPFCRFrdcAS6c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">04 / DENIM</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Denim &amp; Jeans</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Category 5: Co-Ord Sets -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern Indian female model wearing a matching monochrome sand-beige linen-cotton relaxed streetwear co-ord set with boxy short-sleeve shirt and tailored wide-leg shorts in a sunlit architectural setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABBnIgynnyLddZwk1I2Ds-1O62oFUresk3arEhjVstujhGaIFoNyzT4G8O9RosTqVRYfTz4GrEBpixqq9PFtLUxDY296kxhNvV7x6YUskehyRMlv6ZtSVfd1P9zcAJ03eYVeDIERwCE10fE_OaQbgSbAa957N2_Y6z5ZBuB3P_RKCgDvOK7uEWB2yh0VykIrwP7WPbHMkhetPbBBscfr2OgX1OKjGag6Dn6WgMW0Gp7cRgdkDBVgM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">05 / MONOCHROME</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Co-Ord Sets</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Category 6: Overshirts & Jackets -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A heavy canvas chore overshirt in washed khaki brown with double breast pockets hanging on a sculptural industrial metal clothes rack in an airy minimalist boutique showroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Ae2yfqdxIc79QYzUXezNRNM_gTxmpuWug3jX6NgfWNnlAFlVT0DAQy129E8-GxcCwxP8Q2n2fwBIRTZ_N9xwlVHGKpFuizOYL5EKYyeAo3cgUcoO627WLJTj2y6N-FIUYwf9M8652FAZG--QN7Z4_fLf4pj8uZlrHZuXmLfKMo0UwR3L4JjW0apr0G_V3-7SOI79_95Ok-pH3abAIdg1Lar4SAYGL2TTpq9tPI1aB5l0Ht1TZyg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">06 / LAYERING</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Overshirts</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+<!-- Category 7: Accessories -->
+<div class="group relative bg-surface-container-lowest border border-outline-variant overflow-hidden aspect-[4/5] flex flex-col justify-end p-6">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A curated collection of modern streetwear accessories including a structured canvas crossbody bag, embroidered cotton cap, and stainless steel link chain displayed on raw slate stone under dramatic gallery spotlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHsys3nrcY9MuN1yCjdsE14PBaQ1z-l7jhkZ8cjyBKlLe3RY6mo_wtNshzFRXRQM4RpQ3B2bSQ4oolU8A5Q1JeE-AfZ0aH55SXAGmXGwpi6OCgr9yQ7Fd5brKZYKMtIFk0BL8ZxRK0H_EffY7y_VXXFaFXvD1CUV2KBZrw19GtaTDTLcX3DgLBAWNJe9akUEUrNu4tUy_hBRCbzTt4nfpQS6mOvcvtPMtLRj2Br-sWUsawNK9Gv5o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="relative z-10 text-surface">
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">07 / ACCENTS</span>
+<h3 class="text-headline-md font-headline-md uppercase text-surface">Accessories</h3>
+<span class="text-label-caps font-label-caps text-surface uppercase flex items-center gap-1 mt-2">SHOP NOW <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</section>
+<!-- TRENDING NOW SECTION (Interactive Products with Indian Pricing & Quick Actions) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-3xl border-b border-outline-variant" id="trending">
+<!-- Section Header with Category Filter Chips -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2.5 py-0.5 bg-primary-container text-on-primary-container text-label-caps font-label-caps uppercase">Hot Drop</span>
+<span class="text-label-caps font-label-caps text-outline uppercase tracking-wider">REAL-TIME DEMAND</span>
+</div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface uppercase">Trending Now</h2>
+</div>
+<!-- Interactive Category Switcher Chips -->
+<div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="trendingFilterChips">
+<button class="filter-chip px-4 py-2 border border-outline-variant bg-on-surface text-surface text-label-caps font-label-caps uppercase active-filter" data-cat="all">All Items</button>
+<button class="filter-chip px-4 py-2 border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-caps font-label-caps uppercase" data-cat="tees">Heavy Tees</button>
+<button class="filter-chip px-4 py-2 border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-caps font-label-caps uppercase" data-cat="bottoms">Bottoms</button>
+<button class="filter-chip px-4 py-2 border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-caps font-label-caps uppercase" data-cat="fleece">Fleece &amp; Knits</button>
+</div>
+</div>
+<!-- Product Grid (4 Columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="productCardGrid">
+<!-- Product Card 1 -->
+<div class="product-item group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative" data-cat="tees">
+<div class="relative w-full aspect-[4/5] bg-[#F5F3EE] overflow-hidden">
+<!-- Badges -->
+<div class="absolute top-3 left-3 z-20 flex flex-col gap-1.5 items-start">
+<span class="bg-error text-on-error px-2 py-0.5 text-label-caps font-label-caps uppercase tracking-wider">-35%</span>
+<span class="bg-surface/90 text-on-surface border border-outline-variant px-2 py-0.5 text-label-caps font-label-caps uppercase">LIMITED [120 PCS]</span>
+</div>
+<!-- Wishlist Heart Toggle -->
+<button class="wishlist-btn absolute top-3 right-3 z-20 w-9 h-9 bg-surface/90 border border-outline-variant flex items-center justify-center text-on-surface hover:text-error transition-colors" data-liked="true">
+<span class="material-symbols-outlined text-[20px] text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<!-- Product Image -->
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial lookbook studio shot of an Indian streetwear model wearing an oversized off-white heavy boxy tee with typographic back print 'NEVER SLOW DOWN'. High key white background with subtle shadow, contemporary luxury packaging aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpXjBF2BJINrWXq7xJurBOrbhzIVvkBCqSot6tiwJymlSWec1JgjGh4Vm7WN-ADRaw3x2yuQk2WoxR9j4A8mBjmm2abYHbk7v0k1kngr_C_jhqxJj-zxc6fPrdwG3peTVjYXKpXPPUwW2Iq8KPjPIacV_Xx3QqO1I5PlmZiPs0LxYuGbzSchOsl8w0hL6Mu9K8rujVXSGhtsPvlukBxfp7qFaCxJ4WTEqD0w7C3kDMNngvGKxP3RY"/>
+<!-- Quick View Hover Bar -->
+<div class="absolute inset-x-0 bottom-0 p-3 bg-surface/90 backdrop-blur-sm border-t border-outline-variant translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2 z-20">
+<button class="quick-view-btn flex-1 py-2 text-center text-label-caps font-label-caps uppercase bg-on-surface text-surface hover:bg-primary transition-colors" data-desc="Crafted from custom-developed 280 GSM single jersey fabric. Pre-shrunk with a clean ribbed neckline and relaxed drop-shoulder drape made for Indian humidity." data-gsm="280 GSM Combed Cotton" data-mrp="₹1,999" data-name="Overdyed Script Heavy Boxy Tee" data-price="₹1,299" data-rating="4.9 ★ (184 reviews)">
+                QUICK VIEW
+              </button>
+</div>
+</div>
+<!-- Product Details Body -->
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>100% Combed Cotton</span>
+<span class="text-on-surface font-semibold flex items-center gap-0.5 text-[12px]">4.9 <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span> (184)</span>
+</div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                Overdyed Script Heavy Boxy Tee
+              </h3>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-price-md font-price-md text-on-surface">₹1,299</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹1,999</span>
+<span class="text-label-caps font-label-caps text-error font-semibold">SAVE ₹700</span>
+</div>
+</div>
+<!-- Size Selector Chips & Quick Add -->
+<div class="mt-4 pt-3 border-t border-outline-variant">
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-1.5">Select Size</span>
+<div class="flex gap-1.5 mb-3 size-chips">
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface active-size bg-on-surface text-surface">S</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">M</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">L</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">XL</button>
+</div>
+<button class="add-to-cart-quick w-full py-2.5 bg-surface-container-highest border border-outline hover:bg-on-surface hover:text-surface text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1.5" data-img="tees" data-price="1299" data-title="Overdyed Script Heavy Boxy Tee">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span> QUICK ADD
+              </button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-item group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative" data-cat="bottoms">
+<div class="relative w-full aspect-[4/5] bg-[#F5F3EE] overflow-hidden">
+<div class="absolute top-3 left-3 z-20 flex flex-col gap-1.5 items-start">
+<span class="bg-error text-on-error px-2 py-0.5 text-label-caps font-label-caps uppercase tracking-wider">-40%</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-0.5 text-label-caps font-label-caps uppercase">RESTOCKED</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-20 w-9 h-9 bg-surface/90 border border-outline-variant flex items-center justify-center text-on-surface hover:text-error transition-colors" data-liked="true">
+<span class="material-symbols-outlined text-[20px] text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Front view photograph of relaxed wide-leg olive tactical cargo pants featuring bellows pockets, heavy nickel d-ring key holders, and cinchable drawcord ankles worn on a minimalist model." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZnQLQrr_tdflvuQh2zO2KiMyJEds4RH3LK9gTdbP-UA616tLEFZfexwvrVBVBp96_FCTPOj8E7421lF-TWYzEdOMQ0m13w9mi9e9njHdwWFYnYESrLao-uiQc5YeuF1caaOH--XAvicnqlR9GS2Qcm54-eqPAyeTE5SKyC5OzM0twYg6iR1mnmcY_VA3c3b5U2_QL2rAc6CkgsQ_qvoKS_n28xTJJW5Lq1iTKQQ3b72jaJswLWqs"/>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-surface/90 backdrop-blur-sm border-t border-outline-variant translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2 z-20">
+<button class="quick-view-btn flex-1 py-2 text-center text-label-caps font-label-caps uppercase bg-on-surface text-surface hover:bg-primary transition-colors" data-desc="Engineered from tear-resistant 320 GSM cotton ripstop. Features 8 utility compartments, knee articulation darts, and toggle hems to switch between wide and stacked drape." data-gsm="320 GSM Cotton Ripstop" data-mrp="₹4,599" data-name="Tactical Modular 8-Pocket Cargo" data-price="₹2,799" data-rating="4.8 ★ (312 reviews)">
+                QUICK VIEW
+              </button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>Cotton Ripstop 320 GSM</span>
+<span class="text-on-surface font-semibold flex items-center gap-0.5 text-[12px]">4.8 <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span> (312)</span>
+</div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                Tactical Modular 8-Pocket Cargo
+              </h3>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-price-md font-price-md text-on-surface">₹2,799</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹4,599</span>
+<span class="text-label-caps font-label-caps text-error font-semibold">SAVE ₹1,800</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant">
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-1.5">Waist (Inches)</span>
+<div class="flex gap-1.5 mb-3 size-chips">
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">30</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface active-size bg-on-surface text-surface">32</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">34</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant text-outline relative overflow-hidden" disabled="" title="Out of stock">
+                  36
+                  <div class="absolute inset-0 border-t border-error rotate-45 top-1/2"></div>
+</button>
+</div>
+<button class="add-to-cart-quick w-full py-2.5 bg-surface-container-highest border border-outline hover:bg-on-surface hover:text-surface text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1.5" data-img="cargo" data-price="2799" data-title="Tactical Modular 8-Pocket Cargo">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span> QUICK ADD
+              </button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-item group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative" data-cat="fleece">
+<div class="relative w-full aspect-[4/5] bg-[#F5F3EE] overflow-hidden">
+<div class="absolute top-3 left-3 z-20 flex flex-col gap-1.5 items-start">
+<span class="bg-error text-on-error px-2 py-0.5 text-label-caps font-label-caps uppercase tracking-wider">-30%</span>
+<span class="bg-surface/90 text-on-surface border border-outline-variant px-2 py-0.5 text-label-caps font-label-caps uppercase">MONSOON EDITION</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-20 w-9 h-9 bg-surface/90 border border-outline-variant flex items-center justify-center text-on-surface hover:text-error transition-colors" data-liked="false">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial look of a charcoal acid-washed French Terry zip hoodie with double metallic runner zipper, structured double-layered hood, and minimal tone-on-tone typography on front chest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVYmSYnS-rAnZBXPfyNHMuQwfAaTK7ki_qDtiJE9JYMLF7mG5SLZKb4UVKxrcaFb6nioF2-tlMbp1hNTUjCqkDjNAzA4vhhOnDKsjwz05Dd2fnQjGzn8aOxLmALxVh6nHtT83moCYB4PYXPMfRLj00CDyu_vSSozG2WmrLRRJ1REPB4dheSesPj202nAOCfFrkw0tPBw67GxqYNVF0-o37G5IczTPgiL7S_wS0_zXFOQfzOEcsc9Q"/>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-surface/90 backdrop-blur-sm border-t border-outline-variant translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2 z-20">
+<button class="quick-view-btn flex-1 py-2 text-center text-label-caps font-label-caps uppercase bg-on-surface text-surface hover:bg-primary transition-colors" data-desc="Substantial 450 GSM unbrushed loopback cotton terry. Dual YKK two-way zipper, oversized structural hood, and seamless hidden side hand pockets." data-gsm="450 GSM Unbrushed Terry" data-mrp="₹4,999" data-name="Monsoon 450 GSM Heavy French Terry Zip" data-price="₹3,499" data-rating="4.9 ★ (96 reviews)">
+                QUICK VIEW
+              </button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>Heavy Loopback 450 GSM</span>
+<span class="text-on-surface font-semibold flex items-center gap-0.5 text-[12px]">4.9 <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span> (96)</span>
+</div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                Monsoon 450 GSM Heavy French Terry Zip
+              </h3>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-price-md font-price-md text-on-surface">₹3,499</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹4,999</span>
+<span class="text-label-caps font-label-caps text-error font-semibold">SAVE ₹1,500</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant">
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-1.5">Select Size</span>
+<div class="flex gap-1.5 mb-3 size-chips">
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">M</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface active-size bg-on-surface text-surface">L</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">XL</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">XXL</button>
+</div>
+<button class="add-to-cart-quick w-full py-2.5 bg-surface-container-highest border border-outline hover:bg-on-surface hover:text-surface text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1.5" data-img="hoodie" data-price="3499" data-title="Monsoon 450 GSM Heavy French Terry Zip">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span> QUICK ADD
+              </button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-item group bg-surface-container-lowest border border-outline-variant flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative" data-cat="tees">
+<div class="relative w-full aspect-[4/5] bg-[#F5F3EE] overflow-hidden">
+<div class="absolute top-3 left-3 z-20 flex flex-col gap-1.5 items-start">
+<span class="bg-error text-on-error px-2 py-0.5 text-label-caps font-label-caps uppercase tracking-wider">-45%</span>
+<span class="bg-on-surface text-surface px-2 py-0.5 text-label-caps font-label-caps uppercase">CORE ARCHIVE</span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-20 w-9 h-9 bg-surface/90 border border-outline-variant flex items-center justify-center text-on-surface hover:text-error transition-colors" data-liked="false">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial lookbook photograph of a model in a deep moss green oversized heavyweight t-shirt featuring structural dropped shoulders and clean clean geometric lines in an architectural museum setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjiFR6N7mFHWuO5uZn7EgBe1zkVDot2sZCBRBC3u5WuHo7F4nGyiZuyNjqjffciGO_Z1zEdLkPBBOGkga1gbCQpleJGfMbmYR2r9J6qx94VHOC_PN17EV194IpQ_7Ehm8aasERPMazpqZIFBwGGY_1DbyDO-6HowF-mCu0AkwusB2b8M2cogsyFTFMOntRGe75AV8c-_jZnbhjcTWrCIrjOvybf-3uivjqqaO1F066XC1hUAA_dNo"/>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-surface/90 backdrop-blur-sm border-t border-outline-variant translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2 z-20">
+<button class="quick-view-btn flex-1 py-2 text-center text-label-caps font-label-caps uppercase bg-on-surface text-surface hover:bg-primary transition-colors" data-desc="Dyed in bespoke botanical olive-moss pigment. Features seamless side construction and structured boxy sleeves that hit right below the elbow." data-gsm="260 GSM Single Jersey" data-mrp="₹2,199" data-name="Architectural Moss Oversized Tee" data-price="₹1,199" data-rating="4.7 ★ (220 reviews)">
+                QUICK VIEW
+              </button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline mb-1">
+<span>Botanical Moss Wash</span>
+<span class="text-on-surface font-semibold flex items-center gap-0.5 text-[12px]">4.7 <span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span> (220)</span>
+</div>
+<h3 class="text-body-md font-body-md font-semibold text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+                Architectural Moss Oversized Tee
+              </h3>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-price-md font-price-md text-on-surface">₹1,199</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹2,199</span>
+<span class="text-label-caps font-label-caps text-error font-semibold">SAVE ₹1,000</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant">
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-1.5">Select Size</span>
+<div class="flex gap-1.5 mb-3 size-chips">
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">S</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface active-size bg-on-surface text-surface">M</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">L</button>
+<button class="w-8 h-8 text-[11px] font-bold border border-outline-variant hover:border-on-surface bg-surface-container-lowest text-on-surface">XL</button>
+</div>
+<button class="add-to-cart-quick w-full py-2.5 bg-surface-container-highest border border-outline hover:bg-on-surface hover:text-surface text-label-caps font-label-caps uppercase transition-colors flex items-center justify-center gap-1.5" data-img="moss" data-price="1199" data-title="Architectural Moss Oversized Tee">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span> QUICK ADD
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL LOOKBOOK DROP BANNER -->
+<section class="w-full bg-inverse-surface text-inverse-on-surface py-space-3xl border-b border-outline" id="lookbook">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="w-2.5 h-2.5 bg-primary-container inline-block"></span>
+<span class="text-label-caps font-label-caps text-primary-fixed uppercase tracking-widest">CHAPTER 04 // SEASON ARCHIVE</span>
+</div>
+<h2 class="text-headline-xl font-headline-xl text-surface uppercase leading-tight mb-6">
+            THE MONSOON DROP '25
+          </h2>
+<p class="text-body-lg font-body-lg text-surface-variant mb-6">
+            Heavyweight silhouettes cut for dynamic urban movement. Water-resistant ripstop membranes, articulated seam construction, and breathable loopback knits created explicitly for rain-drenched metropolitan commutes.
+          </p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-4 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">check_circle</span>
+<span>Water-repellent 3-layer laminated outerwear</span>
+</div>
+<div class="flex items-center gap-4 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">check_circle</span>
+<span>Reinforced bar-tack stress points &amp; YKK waterproof zips</span>
+</div>
+<div class="flex items-center gap-4 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">check_circle</span>
+<span>Individually numbered certificate with each outer piece</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="px-8 py-3.5 bg-primary-container text-on-primary-container text-label-caps font-label-caps uppercase tracking-wider font-bold hover:bg-primary-fixed transition-colors" href="#lookbook-view">
+              VIEW LOOKBOOK ARCHIVE
+            </a>
+<span class="text-label-caps font-label-caps text-outline uppercase">EDITION OF 500 UNITS ONLY</span>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] border border-outline overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial lookbook photo of an Indian male model in a technical waterproof charcoal shell parka standing under soft rain in a dramatic moody street scene, reflection on wet asphalt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi0gR_sJZE83LGrajsuE3ehWj1pwTK5tXYKZZCruAps4Ewu2BitDPIDlUr596pnYukwuio2sEkvFxVJ0NYxZvi4DghOo294orkseg1_BsatWxi8c2sgPjBI1Lk2aQI4HjKfXf8sUsBdM-kbJnepFgi8LwdNpfQFm_xMA2QvSON6NZ2FcPAbXRSGR-9QK-M5rV-f3zgYfhIqGoiEejblG54S_JolBsatFw6IG2C5Unkd6DoyokgqP0"/>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/80 p-2 text-label-caps font-label-caps uppercase text-surface">Look 01 / Modular Storm Shell</div>
+</div>
+<div class="aspect-[3/4] border border-outline overflow-hidden relative group mt-8">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial streetwear photograph of female model wearing an oversized technical rain jacket with magnetic storm flap and matching wide cargo shorts walking forward in a raw concrete subterranean garage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0YcW0CttWfnsh_mgIfAmtt0HUNsGEJr_-BT1SNyDX6Nw83PP7gVmWGgasevee4tM1UgRYC5cD1j6Vo5XrcdrqyaAUr9UgOYRs5l5QdRkwUIt7YOneeXIkZngkxIOEdFxEAUeiZMZOTcZRBoJ7hIqHKk1ki_xiR7Z0bxDl-uwLb3CZljxuBZbRObrvHiJnSv-EWerKfZomyKfRZiWE1lA2MVVHQWVwIV79IZJQDKSvfAmXHK6pxTQ"/>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/80 p-2 text-label-caps font-label-caps uppercase text-surface">Look 02 / Hydro-Cinch Anorak</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PERSONALIZED "PICKED FOR YOU" SECTION (Style Profile Aware) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-3xl border-b border-outline-variant">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="text-label-caps font-label-caps text-primary uppercase tracking-widest">PERSONALIZED FOR YOUR PROFILE</span>
+</div>
+<h2 class="text-headline-xl font-headline-xl text-on-surface uppercase">Picked For You</h2>
+<p class="text-body-sm font-body-sm text-outline mt-1">Curated based on your affinity for: <span class="text-on-surface font-semibold underline">Oversized Fits</span> &amp; <span class="text-on-surface font-semibold underline">Earthy Tones</span></p>
+</div>
+<!-- Affinity Switcher Controls -->
+<div class="flex items-center gap-2 mt-4 md:mt-0">
+<span class="text-label-caps font-label-caps text-outline uppercase mr-2">Fit Profile:</span>
+<button class="px-3 py-1.5 border border-on-surface bg-on-surface text-surface text-label-caps font-label-caps uppercase">Oversized</button>
+<button class="px-3 py-1.5 border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-on-surface text-label-caps font-label-caps uppercase">Boxy Cropped</button>
+<button class="px-3 py-1.5 border border-outline-variant bg-surface-container-lowest text-on-surface hover:border-on-surface text-label-caps font-label-caps uppercase">Relaxed Taper</button>
+</div>
+</div>
+<!-- Personalized Grid of 3 Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pick 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 flex flex-col justify-between group hover:border-on-surface transition-colors">
+<div class="relative aspect-[4/5] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial flat lay and ghost mannequin photo of a washed clay-brown oversized drop-shoulder heavyweight t-shirt with heavy ribbed collar and subtle brand initials embroidered on the left hem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZpFYrEIVHuDoeLkn5Sg_AJJjsaQPTYZBq753LLwORkd0jLmXTm7Yt2WqSKy-BaeDmYByNemXNbjHbNjnKDv17J-twEfF_sMuIffxi8YJl3f6_21HdAZHwRv9Naz5usxfxiRsxaxA7-uz_RqZwcxAFAR4XSxuHSdNEG4ttkpECyJvIhptRLUAYlRCqgLyXhnB9ly18KK2VfBtxiULBlRbSHRfcKwJfd1cLOyQO3lPj6tInWd5YGZM"/>
+<span class="absolute top-2 left-2 bg-on-surface text-surface px-2 py-0.5 text-label-caps font-label-caps uppercase">98% Match</span>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-caps font-label-caps text-outline uppercase mb-1">
+<span>Earthy Clay Edition</span>
+<span class="text-primary font-semibold">280 GSM</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-1">Washed Terracotta Relaxed Fit Tee</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-price-md font-price-md text-on-surface">₹1,399</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹2,199</span>
+</div>
+<button class="add-to-cart-quick w-full py-2 bg-on-surface text-surface hover:bg-primary transition-colors text-label-caps font-label-caps uppercase" data-img="terracotta" data-price="1399" data-title="Washed Terracotta Relaxed Fit Tee">
+              Add To Bag
+            </button>
+</div>
+</div>
+<!-- Pick 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 flex flex-col justify-between group hover:border-on-surface transition-colors">
+<div class="relative aspect-[4/5] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Streetwear model sitting on a concrete bench wearing washed olive green carpenter denim jeans with hammer loop and contrast ecru stitching, paired with high-top vulcanized sneakers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiCJdDfj6CFOiI9Mnbsg9FLMo0xtpPsWkMCcg2V2RLcyhK0AimhL6_731OVXncjwxdfJMKkkRbg3yeVxgMFGqloXZxcM4jB61aHSit49121k4nOBwVPJG5rnJGHHgew-fEM6ZkYfS7zSFb6cBphlowX5D0RBw7Oe2CaZGlVD106ygeDlfo7G5t4yNIGNvrpnhymBJWtGmTCRNNAfWYvgLOQIUXMO6glFIyy1isdJUxCaHGJVD6F9s"/>
+<span class="absolute top-2 left-2 bg-on-surface text-surface px-2 py-0.5 text-label-caps font-label-caps uppercase">95% Match</span>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-caps font-label-caps text-outline uppercase mb-1">
+<span>13.5 Oz Selvedge</span>
+<span class="text-primary font-semibold">Relaxed Fit</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-1">Olive Drab Carpenter Denim</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-price-md font-price-md text-on-surface">₹2,999</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹4,299</span>
+</div>
+<button class="add-to-cart-quick w-full py-2 bg-on-surface text-surface hover:bg-primary transition-colors text-label-caps font-label-caps uppercase" data-img="carpenter" data-price="2999" data-title="Olive Drab Carpenter Denim">
+              Add To Bag
+            </button>
+</div>
+</div>
+<!-- Pick 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant p-4 flex flex-col justify-between group hover:border-on-surface transition-colors">
+<div class="relative aspect-[4/5] bg-surface-container overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist streetwear product photograph of an earthy stone beige heavy canvas work overshirt with twin chest utility pockets and horn buttons styled over an off-white cotton undershirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoZHnpr1WHV5ggeqcE8GXk546FLUm1gvNZhvjRwsEZDEp5vBbsYiHSgaODwMq0KYrFlbaY4swicnNYFGCC9apWH0QtY_HV65eeUf5jY8rtq3lA9DrGapqanM8IHyvV5TxkCVlxdWVKrIoTw5C1b3jzjJcBNVUTh6kLXjdy19ElkPUsfg7VNZiIuJyifSoQo_V9QwuUYy6FIi8nFTMkXQlms7eO07hPWzVOMM0ePTjYvIs0aM1IDo"/>
+<span class="absolute top-2 left-2 bg-on-surface text-surface px-2 py-0.5 text-label-caps font-label-caps uppercase">92% Match</span>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-caps font-label-caps text-outline uppercase mb-1">
+<span>Structured Twill</span>
+<span class="text-primary font-semibold">Layering</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mb-1">Raw Sand Heavyweight Utility Overshirt</h4>
+<div class="flex items-center gap-2 mb-4">
+<span class="text-price-md font-price-md text-on-surface">₹2,499</span>
+<span class="text-body-sm font-body-sm text-outline line-through">₹3,799</span>
+</div>
+<button class="add-to-cart-quick w-full py-2 bg-on-surface text-surface hover:bg-primary transition-colors text-label-caps font-label-caps uppercase" data-img="sand" data-price="2499" data-title="Raw Sand Heavyweight Utility Overshirt">
+              Add To Bag
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- PINCODE DELIVERY CHECKER & TRUST BADGE MODULE -->
+<section class="w-full bg-surface-container-low border-b border-outline-variant py-space-xl">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5">
+<span class="text-label-caps font-label-caps text-primary uppercase tracking-widest block mb-1">DISPATCH INTEGRATION</span>
+<h3 class="text-headline-md font-headline-md text-on-surface uppercase">Instant Delivery PIN Check</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Check guaranteed express delivery dates across 26,000+ PIN codes in India.</p>
+</div>
+<div class="md:col-span-7 flex flex-col sm:flex-row items-center gap-3">
+<div class="relative w-full sm:w-80">
+<input class="w-full px-4 py-3 bg-surface-container-lowest border border-outline text-body-md font-body-md focus:border-on-surface focus:ring-0 uppercase tracking-widest" id="pincodeInput" maxlength="6" placeholder="Enter 6-Digit PIN (e.g. 110001, 400001)" type="text"/>
+</div>
+<button class="w-full sm:w-auto px-8 py-3 bg-on-surface text-surface text-label-caps font-label-caps uppercase font-bold hover:bg-primary hover:text-on-primary transition-colors" id="checkPincodeBtn">
+            Check Availability
+          </button>
+<div class="text-body-sm font-body-sm hidden flex items-center gap-1.5 font-semibold text-primary" id="pincodeResult">
+<span class="material-symbols-outlined text-[18px]">verified</span> Delivers in 48 Hours
+          </div>
+</div>
+</div>
+</section>
+<!-- NEWSLETTER SUBSCRIPTION SECTION -->
+<section class="w-full bg-surface-container-lowest border-b border-outline-variant py-space-3xl">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop text-center max-w-2xl">
+<span class="text-label-caps font-label-caps text-primary uppercase tracking-widest block mb-3">EXCLUSIVE ARCHIVE ACCESS</span>
+<h2 class="text-headline-xl font-headline-xl text-on-surface uppercase mb-4">Stay In The Loop.</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8">
+          Receive secret drops, early lookbook previews &amp; <span class="font-bold text-on-surface">15% off</span> your first order with code <span class="bg-surface-container px-2 py-0.5 border border-outline font-semibold">HUSTLEFIRST</span>.
+        </p>
+<form class="flex flex-col sm:flex-row gap-3 justify-center" id="newsletterForm" onsubmit="event.preventDefault(); alert('Subscribed to HUSTLE WEAR archive alerts.');">
+<input class="px-5 py-3.5 bg-surface-container-low border border-outline text-body-md font-body-md w-full sm:w-96 focus:border-on-surface focus:ring-0" placeholder="Enter your email address" required="" type="email"/>
+<button class="px-8 py-3.5 bg-on-surface text-surface hover:bg-primary hover:text-on-primary transition-colors text-label-caps font-label-caps uppercase font-bold" type="submit">
+            JOIN ARCHIVE
+          </button>
+</form>
+<p class="text-body-sm font-body-sm text-outline mt-3">Zero spam. Unsubscribe anytime with one click.</p>
+</div>
+</section>
+</main>
+<!-- SLIDE-OUT MINI CART DRAWER (Interactive Streetwear Quick-Cart) -->
+<div class="fixed inset-0 bg-[#121214]/40 z-50 hidden opacity-0 transition-opacity duration-300" id="cartDrawerScrim"></div>
+<aside class="fixed top-0 right-0 w-full max-w-md h-full bg-surface-container-lowest border-l border-outline-variant z-50 flex flex-col justify-between translate-x-full transition-transform duration-300 shadow-2xl" id="cartDrawer">
+<!-- Drawer Header -->
+<div class="p-6 border-b border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Your Bag (<span id="cartDrawerCount">3</span>)</h3>
+</div>
+<button class="p-1 text-on-surface hover:text-error transition-colors" id="closeCartBtn">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Free Delivery Progress Bar -->
+<div class="px-6 py-3 bg-surface-container-low border-b border-outline-variant">
+<div class="flex justify-between text-label-caps font-label-caps uppercase mb-1">
+<span class="text-primary font-bold">Free Pan-India Delivery Unlocked!</span>
+<span class="text-outline">Min ₹999</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5">
+<div class="bg-primary h-full w-full"></div>
+</div>
+</div>
+<!-- Cart Items Scroll List -->
+<div class="flex-1 overflow-y-auto p-6 space-y-4 custom-scroll" id="cartItemList">
+<!-- Cart Item 1 -->
+<div class="cart-row flex gap-4 pb-4 border-b border-dashed border-outline-variant" data-price="1299">
+<div class="w-20 h-24 bg-surface-container flex-shrink-0 border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail preview of oversized off-white heavy boxy streetwear tee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdu_O4IUt0NvGoQlmX6E9f_Xh9OcEd1WPrO6L-XQ5HOTMjvRHkWP1FHUXhc9S9dp2-pdZfCPCcAxLiE4Jtp_jO50mXrtrFBeS9jgq9CO9MeTU-kKnVPZofPKAew463ZUJCzfoD7Fof4uf7JYWTnVayomV5KKnBLagaFSvviG_1Bq4YIx9CxdO6c0Wd7Nv4Dq2eAF29mEfJPVbioARCwH97QBxC7wwA_xWfjJPEN8dubnwdg08d3jk"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-body-sm font-body-sm font-semibold text-on-surface leading-tight">Overdyed Script Heavy Boxy Tee</h4>
+<button class="remove-cart-item text-outline hover:text-error ml-2"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<p class="text-label-caps font-label-caps text-outline uppercase mt-0.5">Size: L • Off-White</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center border border-outline-variant">
+<button class="qty-minus px-2 py-0.5 text-body-sm hover:bg-surface-container">-</button>
+<span class="item-qty px-3 py-0.5 text-body-sm font-semibold">1</span>
+<button class="qty-plus px-2 py-0.5 text-body-sm hover:bg-surface-container">+</button>
+</div>
+<span class="text-price-md font-price-md text-on-surface item-total">₹1,299</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="cart-row flex gap-4 pb-4 border-b border-dashed border-outline-variant" data-price="2799">
+<div class="w-20 h-24 bg-surface-container flex-shrink-0 border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail preview of relaxed olive tactical cargo pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUNPWYYY09H6Ba4e0MZR-aHFujX7KOrRq8mks0btcI3l8z5cxEqHZNorna1HVASSlAdm2gWMNPLuKYNtUifgJLPFRWDhEUj1sjjcPh4bSB3f7uG_RN5IJmoh__zeV-YGUa09bVX8SNc-F3WkT6iE1FaDLtN0PDYnv9UyIp1vwxV63RkTGuv2QOzvDg2-34Gla_APZmi_7VQ1wVFNxeqBVdNco-aM4k3HJET8acnZ9N41DX90t-3-0"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-body-sm font-body-sm font-semibold text-on-surface leading-tight">Tactical Modular 8-Pocket Cargo</h4>
+<button class="remove-cart-item text-outline hover:text-error ml-2"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<p class="text-label-caps font-label-caps text-outline uppercase mt-0.5">Size: 32 • Olive Drab</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center border border-outline-variant">
+<button class="qty-minus px-2 py-0.5 text-body-sm hover:bg-surface-container">-</button>
+<span class="item-qty px-3 py-0.5 text-body-sm font-semibold">1</span>
+<button class="qty-plus px-2 py-0.5 text-body-sm hover:bg-surface-container">+</button>
+</div>
+<span class="text-price-md font-price-md text-on-surface item-total">₹2,799</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 3 -->
+<div class="cart-row flex gap-4 pb-4 border-b border-dashed border-outline-variant" data-price="3499">
+<div class="w-20 h-24 bg-surface-container flex-shrink-0 border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail preview of charcoal acid wash French Terry heavy zip hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-kRbDfjJEcLlE7Iifv3ySophRxp9slABSHduES5GMOYWNPDRHm5cTVdz3LKakC7K-AD7tNydIs4wUvnvNaNyUr03AoQf8MXv5H33sjfSuWQ4MYOZ8_HuSJgaOGN26iUE8YcLM993hIAEZxViIHq-lVipCK-GZSRHgLgxOIcG-FX3bAPuKBT5QFud-dJ4pYH4TezXLK1750QkhVcySK1ASX4xAJRoW_Lm2FGb-c90fl3pQrs1OgHw"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-body-sm font-body-sm font-semibold text-on-surface leading-tight">Monsoon 450 GSM French Terry Zip</h4>
+<button class="remove-cart-item text-outline hover:text-error ml-2"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<p class="text-label-caps font-label-caps text-outline uppercase mt-0.5">Size: XL • Acid Charcoal</p>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center border border-outline-variant">
+<button class="qty-minus px-2 py-0.5 text-body-sm hover:bg-surface-container">-</button>
+<span class="item-qty px-3 py-0.5 text-body-sm font-semibold">1</span>
+<button class="qty-plus px-2 py-0.5 text-body-sm hover:bg-surface-container">+</button>
+</div>
+<span class="text-price-md font-price-md text-on-surface item-total">₹3,499</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-6 bg-surface-container-low border-t border-outline-variant">
+<!-- Coupon Badge -->
+<div class="flex items-center justify-between py-2 px-3 bg-surface-container-lowest border border-outline-variant mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">loyalty</span>
+<span class="text-label-caps font-label-caps uppercase text-on-surface font-semibold">Coupon 'HUSTLE10' Applied</span>
+</div>
+<span class="text-label-caps font-label-caps text-error font-bold">-₹759</span>
+</div>
+<div class="space-y-1.5 mb-4 text-body-sm font-body-sm">
+<div class="flex justify-between text-outline">
+<span>Subtotal</span>
+<span class="text-on-surface font-semibold" id="cartSubtotal">₹7,597</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Pan-India Shipping</span>
+<span class="text-primary font-bold uppercase">FREE</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md font-bold text-on-surface pt-2 border-t border-outline-variant">
+<span>Total (Incl. all taxes)</span>
+<span class="text-price-md font-price-md text-on-surface" id="cartFinalTotal">₹6,838</span>
+</div>
+</div>
+<button class="w-full py-4 bg-on-surface text-surface hover:bg-primary hover:text-on-primary transition-colors text-label-caps font-label-caps uppercase font-bold tracking-wider flex items-center justify-center gap-2">
+        PROCEED TO CHECKOUT <span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+<div class="flex justify-center items-center gap-4 mt-3 text-label-caps font-label-caps text-outline uppercase">
+<span>UPI</span> • <span>Cards</span> • <span>NetBanking</span> • <span>7-Day Return</span>
+</div>
+</div>
+</aside>
+<!-- SLIDE-OUT NOTIFICATIONS PANEL -->
+<div class="fixed inset-0 bg-[#121214]/40 z-50 hidden opacity-0 transition-opacity duration-300" id="notificationsDrawerScrim"></div>
+<aside class="fixed top-0 right-0 w-full max-w-sm h-full bg-surface-container-lowest border-l border-outline-variant z-50 flex flex-col justify-between translate-x-full transition-transform duration-300 shadow-2xl" id="notificationsDrawer">
+<div class="p-6 border-b border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">notifications</span>
+<h3 class="text-headline-sm font-headline-sm uppercase text-on-surface">Archive Alerts</h3>
+</div>
+<button class="p-1 text-on-surface hover:text-error transition-colors" id="closeNotificationsBtn">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="flex-1 p-6 space-y-4 overflow-y-auto">
+<div class="p-3 bg-surface-container border-l-2 border-primary">
+<span class="text-label-caps font-label-caps text-primary uppercase block">Drop Alert • 2h ago</span>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface mt-1">Monsoon Drop '25 is officially live</p>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Heavy French Terry hoodies and cargo sets now available.</p>
+</div>
+<div class="p-3 bg-surface-container border-l-2 border-outline">
+<span class="text-label-caps font-label-caps text-outline uppercase block">Restock Notice • Yesterday</span>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface mt-1">Tactical 8-Pocket Cargo Restocked</p>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Sizes 30, 32, and 34 back in limited production units.</p>
+</div>
+<div class="p-3 bg-surface-container border-l-2 border-outline">
+<span class="text-label-caps font-label-caps text-outline uppercase block">Order Dispatch • 3d ago</span>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface mt-1">Order #HW-84920 Delivered</p>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Hope you love the 280 GSM fit. Rate your silhouette.</p>
+</div>
+</div>
+<div class="p-4 border-t border-outline-variant text-center">
+<button class="text-label-caps font-label-caps text-on-surface hover:text-primary uppercase tracking-wider">Mark All As Read</button>
+</div>
+</aside>
+<!-- QUICK VIEW MODAL (Interactive Garment Preview) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#121214]/60 hidden opacity-0 transition-opacity duration-200" id="quickViewModal">
+<div class="bg-surface-container-lowest border border-outline-variant max-w-3xl w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-2xl relative">
+<button class="absolute top-3 right-3 z-30 p-1.5 bg-surface text-on-surface hover:bg-on-surface hover:text-surface transition-colors border border-outline-variant" id="closeQuickViewBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Modal Image Left -->
+<div class="relative bg-surface-container aspect-square md:aspect-auto">
+<img class="w-full h-full object-cover" data-alt="Editorial lookbook high resolution preview of garment texture, ribbed neck detail, and architectural streetwear silhouette in high contrast gallery lighting" id="modalImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8t95rwBaVVY75lq4reCkgB2_EEyXBYR2xTTogP8UGmPvkOPAfI0LelKsJTJkXTkYp-6BpwdkrzdkQ7HE4mIZstEIdgJYrc_btEYZOG86m-VQV9El_dlzaZdlLUPxvEuq2s4aYIm-kr066g5Ztkw3aEKIK_21V8OnBWiV2n-yJnIfJAqq1tbMUVkEnehYgbH9TWA5NmKHCHwx56dK84edAxo7yqZV-pQdPqsDqWTPfiIrojhAm6BQ"/>
+</div>
+<!-- Modal Info Right -->
+<div class="p-6 md:p-8 flex flex-col justify-between">
+<div>
+<span class="text-label-caps font-label-caps text-primary uppercase tracking-widest block mb-1" id="modalGsm">Fabric Spec</span>
+<h3 class="text-headline-md font-headline-md text-on-surface uppercase mb-2" id="modalTitle">Garment Title</h3>
+<div class="flex items-center gap-3 mb-4">
+<span class="text-price-lg font-price-lg text-on-surface" id="modalPrice">₹0</span>
+<span class="text-body-md font-body-md text-outline line-through" id="modalMrp">₹0</span>
+<span class="text-body-sm font-body-sm text-on-surface font-semibold flex items-center gap-1" id="modalRating">★ 4.9</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-6" id="modalDesc">
+            Detailed fabric specifications and structural drape profile.
+          </p>
+<div class="space-y-4 mb-6">
+<div>
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-2">Select Architecture / Size</span>
+<div class="flex gap-2">
+<button class="w-10 h-10 border border-on-surface bg-on-surface text-surface text-body-sm font-bold">S</button>
+<button class="w-10 h-10 border border-outline-variant hover:border-on-surface text-body-sm font-bold">M</button>
+<button class="w-10 h-10 border border-outline-variant hover:border-on-surface text-body-sm font-bold">L</button>
+<button class="w-10 h-10 border border-outline-variant hover:border-on-surface text-body-sm font-bold">XL</button>
+</div>
+</div>
+</div>
+</div>
+<div>
+<button class="w-full py-3.5 bg-on-surface text-surface hover:bg-primary hover:text-on-primary transition-colors text-label-caps font-label-caps uppercase font-bold tracking-wider mb-2" id="modalAddToBagBtn">
+            ADD TO BAG
+          </button>
+<p class="text-label-caps font-label-caps text-outline text-center uppercase">Express dispatch within 24 hours PAN-India</p>
+</div>
+</div>
+</div>
+</div>
+<!-- EDITORIAL COMMERCE FOOTER (Shared Components Exact Blueprint) -->
+<footer class="bg-surface-container dark:bg-inverse-surface w-full border-t border-outline-variant dark:border-outline">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop py-space-2xl flex flex-col gap-space-xl">
+<!-- Upper Footer Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+<!-- Brand Statement Column -->
+<div class="lg:col-span-2 space-y-4">
+<a class="text-headline-md font-headline-md uppercase text-on-surface dark:text-inverse-on-surface tracking-tight" href="#">
+            HUSTLE WEAR
+          </a>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant max-w-sm">
+            Architectural luxury streetwear crafted for the modern Indian subculture. Designed with heavyweight structural textiles, zero compromises, and uncompromising urban durability.
+          </p>
+<div class="pt-2">
+<span class="text-label-caps font-label-caps text-outline uppercase block mb-1">Customer Care PIN Hotline</span>
+<p class="text-headline-sm font-headline-sm text-on-surface font-semibold">+91 (0) 1800-487-853</p>
+<p class="text-body-sm font-body-sm text-outline">Mon — Sat, 10:00 AM — 7:00 PM IST</p>
+</div>
+</div>
+<!-- Links Column: Shop -->
+<div>
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface mb-4">Shop</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#tees">Heavyweight T-Shirts</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#cargos">Tactical Cargos</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#hoodies">French Terry Fleece</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#sets">Monochrome Co-Ords</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#denim">Selvedge Denim</a></li>
+<li><a class="text-error font-body-sm font-semibold hover:underline" href="#sale">Offers &amp; Archive Sale</a></li>
+</ul>
+</div>
+<!-- Links Column: Help & Account -->
+<div>
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface mb-4">Help &amp; Info</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Track Shipment</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">7-Day Return Portal</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Size Architecture Guide</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Fabric &amp; GSM Directory</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Terms &amp; Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Links Column: Company & Connect -->
+<div>
+<h4 class="text-headline-sm font-headline-sm uppercase text-on-surface dark:text-inverse-on-surface mb-4">Connect</h4>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Instagram (@hustlewear)</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Subculture Journal</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Community Drops</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Flagship Studio Mumbai</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant font-body-sm hover:text-primary dark:hover:text-primary-fixed underline transition-all duration-150" href="#">Careers at Archive</a></li>
+</ul>
+</div>
+</div>
+<!-- Payment Gateways & Secure Trust Line (UPI, RuPay, Visa, Mastercard, NetBanking) -->
+<div class="py-6 border-y border-outline-variant dark:border-outline flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="text-label-caps font-label-caps text-outline uppercase tracking-wider">Secured Indian Payment Ecosystem:</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-label-caps font-label-caps uppercase text-on-surface dark:text-inverse-on-surface font-semibold">
+<span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant">UPI (GPay / PhonePe / Paytm)</span>
+<span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant">RuPay</span>
+<span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant">Visa</span>
+<span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant">Mastercard</span>
+<span class="px-3 py-1 bg-surface-container-lowest border border-outline-variant">NetBanking 50+ Banks</span>
+</div>
+</div>
+<!-- Lower Copyright Exact JSON String Line -->
+<div class="flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant gap-4">
+<p>© 2025 HUSTLE WEAR ARCHIVE. ALL RIGHTS RESERVED. ALL PRICES IN INR (₹).</p>
+<div class="flex gap-6 text-label-caps font-label-caps uppercase">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Commerce</a>
+<a class="hover:text-primary transition-colors" href="#">GST Compliance</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- INTERACTIVE LOGIC (JavaScript) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Search Bar Overlay Interactive Logic
+      const searchInput = document.getElementById('mainSearchInput');
+      const searchDropdown = document.getElementById('searchDropdown');
+      const searchClearBtn = document.getElementById('searchClearBtn');
+
+      searchInput.addEventListener('focus', () => {
+        searchDropdown.classList.remove('hidden');
+      });
+
+      searchInput.addEventListener('input', (e) => {
+        if (e.target.value.trim().length > 0) {
+          searchClearBtn.classList.remove('hidden');
+        } else {
+          searchClearBtn.classList.add('hidden');
+        }
+      });
+
+      searchClearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchClearBtn.classList.add('hidden');
+        searchInput.focus();
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target) && !searchClearBtn.contains(e.target)) {
+          searchDropdown.classList.add('hidden');
+        }
+      });
+
+      // 2. Mini Cart Drawer Open/Close
+      const openCartBtn = document.getElementById('openCartBtn');
+      const closeCartBtn = document.getElementById('closeCartBtn');
+      const cartDrawer = document.getElementById('cartDrawer');
+      const cartDrawerScrim = document.getElementById('cartDrawerScrim');
+
+      function toggleCart(show) {
+        if (show) {
+          cartDrawerScrim.classList.remove('hidden');
+          setTimeout(() => {
+            cartDrawerScrim.classList.remove('opacity-0');
+            cartDrawer.classList.remove('translate-x-full');
+          }, 10);
+        } else {
+          cartDrawer.classList.add('translate-x-full');
+          cartDrawerScrim.classList.add('opacity-0');
+          setTimeout(() => {
+            cartDrawerScrim.classList.add('hidden');
+          }, 300);
+        }
+      }
+
+      openCartBtn.addEventListener('click', () => toggleCart(true));
+      closeCartBtn.addEventListener('click', () => toggleCart(false));
+      cartDrawerScrim.addEventListener('click', () => toggleCart(false));
+
+      // 3. Notifications Drawer Open/Close
+      const openNotifBtn = document.getElementById('openNotificationsBtn');
+      const closeNotifBtn = document.getElementById('closeNotificationsBtn');
+      const notifDrawer = document.getElementById('notificationsDrawer');
+      const notifDrawerScrim = document.getElementById('notificationsDrawerScrim');
+
+      function toggleNotif(show) {
+        if (show) {
+          notifDrawerScrim.classList.remove('hidden');
+          setTimeout(() => {
+            notifDrawerScrim.classList.remove('opacity-0');
+            notifDrawer.classList.remove('translate-x-full');
+          }, 10);
+        } else {
+          notifDrawer.classList.add('translate-x-full');
+          notifDrawerScrim.classList.add('opacity-0');
+          setTimeout(() => {
+            notifDrawerScrim.classList.add('hidden');
+          }, 300);
+        }
+      }
+
+      openNotifBtn.addEventListener('click', () => toggleNotif(true));
+      closeNotifBtn.addEventListener('click', () => toggleNotif(false));
+      notifDrawerScrim.addEventListener('click', () => toggleNotif(false));
+
+      // 4. Wishlist Toggle and Live Count Badge
+      let wishlistCount = 2;
+      const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+      const wishlistCountBadge = document.getElementById('wishlistCountBadge');
+
+      wishlistButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isLiked = btn.getAttribute('data-liked') === 'true';
+          const icon = btn.querySelector('.material-symbols-outlined');
+          
+          if (isLiked) {
+            btn.setAttribute('data-liked', 'false');
+            icon.style.fontVariationSettings = "'FILL' 0";
+            icon.classList.remove('text-error');
+            wishlistCount = Math.max(0, wishlistCount - 1);
+          } else {
+            btn.setAttribute('data-liked', 'true');
+            icon.style.fontVariationSettings = "'FILL' 1";
+            icon.classList.add('text-error');
+            wishlistCount++;
+          }
+          wishlistCountBadge.textContent = `(${wishlistCount})`;
+        });
+      });
+
+      // 5. Category Filtering on Trending Now
+      const filterChips = document.querySelectorAll('.filter-chip');
+      const productItems = document.querySelectorAll('.product-item');
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          filterChips.forEach(c => {
+            c.classList.remove('bg-on-surface', 'text-surface');
+            c.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          chip.classList.add('bg-on-surface', 'text-surface');
+          chip.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+          const cat = chip.getAttribute('data-cat');
+          productItems.forEach(item => {
+            if (cat === 'all' || item.getAttribute('data-cat') === cat) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 6. Size Chip Selection in Product Cards
+      document.querySelectorAll('.size-chips button:not([disabled])').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const parent = this.parentElement;
+          parent.querySelectorAll('button').forEach(b => {
+            b.classList.remove('bg-on-surface', 'text-surface');
+            b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          this.classList.add('bg-on-surface', 'text-surface');
+          this.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        });
+      });
+
+      // 7. Cart Calculation & Stepper Interaction
+      const cartHeaderCount = document.getElementById('cartCountHeader');
+      const cartDrawerCount = document.getElementById('cartDrawerCount');
+      const cartSubtotalEl = document.getElementById('cartSubtotal');
+      const cartFinalTotalEl = document.getElementById('cartFinalTotal');
+      let currentItemsTotal = 3;
+
+      function recalculateCart() {
+        let subtotal = 0;
+        let count = 0;
+        const rows = document.querySelectorAll('.cart-row');
+        rows.forEach(row => {
+          const price = parseInt(row.getAttribute('data-price'), 10);
+          const qty = parseInt(row.querySelector('.item-qty').textContent, 10);
+          const total = price * qty;
+          row.querySelector('.item-total').textContent = `₹${total.toLocaleString('en-IN')}`;
+          subtotal += total;
+          count += qty;
+        });
+
+        const discount = Math.round(subtotal * 0.10); // 10% coupon
+        const finalTotal = Math.max(0, subtotal - discount);
+
+        cartSubtotalEl.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+        cartFinalTotalEl.textContent = `₹${finalTotal.toLocaleString('en-IN')}`;
+        cartHeaderCount.textContent = count;
+        cartDrawerCount.textContent = count;
+      }
+
+      document.getElementById('cartItemList').addEventListener('click', (e) => {
+        const plusBtn = e.target.closest('.qty-plus');
+        const minusBtn = e.target.closest('.qty-minus');
+        const removeBtn = e.target.closest('.remove-cart-item');
+
+        if (plusBtn) {
+          const qtyEl = plusBtn.parentElement.querySelector('.item-qty');
+          let val = parseInt(qtyEl.textContent, 10);
+          qtyEl.textContent = val + 1;
+          recalculateCart();
+        }
+
+        if (minusBtn) {
+          const qtyEl = minusBtn.parentElement.querySelector('.item-qty');
+          let val = parseInt(qtyEl.textContent, 10);
+          if (val > 1) {
+            qtyEl.textContent = val - 1;
+            recalculateCart();
+          }
+        }
+
+        if (removeBtn) {
+          const row = removeBtn.closest('.cart-row');
+          row.remove();
+          recalculateCart();
+        }
+      });
+
+      // Quick Add Button handler
+      document.querySelectorAll('.add-to-cart-quick').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const title = btn.getAttribute('data-title');
+          const price = btn.getAttribute('data-price');
+          
+          // Append new cart item dynamically
+          const cartList = document.getElementById('cartItemList');
+          const newRow = document.createElement('div');
+          newRow.className = 'cart-row flex gap-4 pb-4 border-b border-dashed border-outline-variant';
+          newRow.setAttribute('data-price', price);
+          newRow.innerHTML = `
+            <div class="w-20 h-24 bg-surface-container flex-shrink-0 border border-outline-variant overflow-hidden">
+              <img src="placeholder" data-alt="Product thumbnail preview" class="w-full h-full object-cover">
+            </div>
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-start">
+                  <h4 class="text-body-sm font-body-sm font-semibold text-on-surface leading-tight">${title}</h4>
+                  <button class="remove-cart-item text-outline hover:text-error ml-2"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+                </div>
+                <p class="text-label-caps font-label-caps text-outline uppercase mt-0.5">Size: L • Standard Drape</p>
+              </div>
+              <div class="flex items-center justify-between mt-2">
+                <div class="flex items-center border border-outline-variant">
+                  <button class="qty-minus px-2 py-0.5 text-body-sm hover:bg-surface-container">-</button>
+                  <span class="item-qty px-3 py-0.5 text-body-sm font-semibold">1</span>
+                  <button class="qty-plus px-2 py-0.5 text-body-sm hover:bg-surface-container">+</button>
+                </div>
+                <span class="text-price-md font-price-md text-on-surface item-total">₹${parseInt(price).toLocaleString('en-IN')}</span>
+              </div>
+            </div>
+          `;
+          cartList.appendChild(newRow);
+          recalculateCart();
+          toggleCart(true);
+        });
+      });
+
+      // 8. Quick View Modal Interaction
+      const quickViewModal = document.getElementById('quickViewModal');
+      const closeQuickViewBtn = document.getElementById('closeQuickViewBtn');
+
+      document.querySelectorAll('.quick-view-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.getElementById('modalTitle').textContent = btn.getAttribute('data-name');
+          document.getElementById('modalPrice').textContent = btn.getAttribute('data-price');
+          document.getElementById('modalMrp').textContent = btn.getAttribute('data-mrp');
+          document.getElementById('modalGsm').textContent = btn.getAttribute('data-gsm');
+          document.getElementById('modalRating').textContent = btn.getAttribute('data-rating');
+          document.getElementById('modalDesc').textContent = btn.getAttribute('data-desc');
+
+          quickViewModal.classList.remove('hidden');
+          setTimeout(() => {
+            quickViewModal.classList.remove('opacity-0');
+          }, 10);
+        });
+      });
+
+      closeQuickViewBtn.addEventListener('click', () => {
+        quickViewModal.classList.add('opacity-0');
+        setTimeout(() => {
+          quickViewModal.classList.add('hidden');
+        }, 200);
+      });
+
+      quickViewModal.addEventListener('click', (e) => {
+        if (e.target === quickViewModal) {
+          quickViewModal.classList.add('opacity-0');
+          setTimeout(() => {
+            quickViewModal.classList.add('hidden');
+          }, 200);
+        }
+      });
+
+      document.getElementById('modalAddToBagBtn').addEventListener('click', () => {
+        quickViewModal.classList.add('opacity-0');
+        setTimeout(() => {
+          quickViewModal.classList.add('hidden');
+        }, 200);
+        toggleCart(true);
+      });
+
+      // 9. PIN Code Express Delivery Checker
+      const checkPinBtn = document.getElementById('checkPincodeBtn');
+      const pinInput = document.getElementById('pincodeInput');
+      const pinResult = document.getElementById('pincodeResult');
+
+      checkPinBtn.addEventListener('click', () => {
+        const val = pinInput.value.trim();
+        if (val.length === 6 && /^\d+$/.test(val)) {
+          pinResult.classList.remove('hidden');
+          pinResult.innerHTML = `<span class="material-symbols-outlined text-[18px]">verified</span> Available for PIN ${val}: Guaranteed Express 48h Delivery`;
+        } else {
+          pinResult.classList.remove('hidden');
+          pinResult.classList.remove('text-primary');
+          pinResult.classList.add('text-error');
+          pinResult.innerHTML = `<span class="material-symbols-outlined text-[18px]">error</span> Please enter a valid 6-digit Indian PIN code`;
+        }
+      });
+
+    });
+  </script>
+</body></html>
