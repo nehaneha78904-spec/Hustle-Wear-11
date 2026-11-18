@@ -1,0 +1,12 @@
+{
+  "name": "hustle-wear-root",
+  "version": "1.0.0",
+  "description": "Hustle Wear Full Stack Streetwear Storefront",
+  "scripts": {
+    "start": "cd hustle-wear-backend && npm start",
+    "dev:backend": "cd hustle-wear-backend && npm run dev",
+    "dev:frontend": "cd hustle-wear-frontend && npm run dev",
+    "build:frontend": "cd hustle-wear-frontend && npm run build",
+    "seed": "cd hustle-wear-backend && npm run seed"
+  }
+}
